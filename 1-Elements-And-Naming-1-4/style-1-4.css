@@ -1,27 +1,19 @@
-/*  Valid */
-._user-name {
+/* BAD  / Upper Case Snake Case*/
+.USERNAME {
 }
 
-/* -Valid */
-.-user-name {
+/* BAD / Pascal Case*/
+.UserName {
 }
 
-/* Not Valid */
-.1user-name {
+/* GOOG */
+.user-name {
 }
 
-/* Not Vaild */
-.@user-name {
+/* BAD / Camel Case*/
+.userName {
 }
 
-/* Not-Valid */
-.user@name {
-}
-
-/* Valid */
-._user10name {
-}
-
-/* Valid */
-.u {
+/* BAD */
+.usernameprofile {
 }
