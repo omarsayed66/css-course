@@ -13,10 +13,12 @@ div {
 .assign-2-shape-2 {
   background-image: url(img/img1.png);
   background-repeat: repeat-y;
+  background-position: right;
 }
 .assign-2-shape-3 {
   background-image: url(img/img1.png);
   background-repeat: repeat-x;
+  background-position: 0% 100%;
 }
 .assign-2-shape-4 {
   background-image: url(img/img1.png);
