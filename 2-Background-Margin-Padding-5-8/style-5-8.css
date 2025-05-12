@@ -9,17 +9,22 @@ div {
 .assign-2-shape-1 {
   background-image: url(img/img1.png);
   background-repeat: no-repeat;
+  background-size: 80% 20%;
 }
 .assign-2-shape-2 {
   background-image: url(img/img1.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-size: 80% 100%;
   background-position: right;
 }
 .assign-2-shape-3 {
   background-image: url(img/img1.png);
-  background-repeat: repeat-x;
-  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: bottom;
 }
 .assign-2-shape-4 {
   background-image: url(img/img1.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
