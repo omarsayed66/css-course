@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url(imgs/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header .div-h-1 {
+  /* background-color: white; */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .div-h-2 {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 80%;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .logo {
+  /* background-color: antiquewhite; */
+  width: 17%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+header .logo img {
+  filter: brightness(0) invert(1);
+  width: 48px;
+}
+
+header .logo .link-logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 10px;
+  color: white;
+}
+
+header .nav-link {
+  /* background-color: wheat; */
+  width: 83%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .nav-link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 75%;
+  margin-right: -55px;
+}
+
+header .nav-link ul li {
+  padding-left: 40px;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* header .nav-link .div-h-3 {
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+} */
+header .nav-link .link-logo-2 {
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+header .nav-link ul li:hover {
+  color: #dda15e;
+}
+/*
+header .nav-link .div-h-3:hover {
+  background-color: white;
+}
+
+header .nav-link .div-h-3 .link-logo-2:hover {
+  color: #dda15e;
+  background-color: white;
+  
+} */
+
+/* header .nav-link .div-h-3:hover,
+header .nav-link .div-h-3:hover .link-logo-2 {
+  background-color: white;
+  color: #dda15e;
+  transition: all 0.5s;
+} */
+
+header .nav-link .link-logo-2:hover {
+  background-color: white;
+  color: #dda15e;
+}
