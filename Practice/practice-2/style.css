@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Sarabun", sans-serif;
 }
 
 header {
@@ -14,9 +15,12 @@ header {
 header .div-h-1 {
   /* background-color: white; */
   height: 150px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 100000;
 }
 
 header .div-h-2 {
@@ -132,7 +136,7 @@ header .overlay-1 {
   height: 220px;
   position: relative;
   left: 52%;
-  top: 30%;
+  top: 54%;
   transform: translate(-50%, -50%) rotate(135deg);
   /* margin: 60px auto auto auto; */
   border-radius: 10px;
@@ -155,14 +159,14 @@ header .overlay-para-1 .top {
 header .overlay-para-1 h1 {
   color: white;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   margin: 0 0 0 58px;
 }
 
 header .overlay-para-1 .bottom {
   color: #f6f6f6;
-  margin: 15px 0 30px 0;
-  font-size: 20px;
+  margin: 15px 0 30px 40px;
+  font-size: 18px;
 }
 
 header .overlay-para-1 .button {
@@ -178,7 +182,7 @@ header .overlay-para-1 .button .left {
   color: white;
   background-color: transparent;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 30px;
   border-radius: 30px;
   cursor: pointer;
@@ -192,7 +196,7 @@ header .overlay-para-1 .button .right {
   color: white;
   background-color: #bc6c25;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 25px;
   border-radius: 30px;
   cursor: pointer;
@@ -200,4 +204,133 @@ header .overlay-para-1 .button .right {
 }
 header .overlay-para-1 .button .right:hover {
   background-color: #dda15e;
+}
+
+.sec-1 {
+  background-color: #4d3821;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-1 .div-1 {
+  /* background-color: aqua; */
+  width: 85%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-1 .div-1 .left {
+  /* background-color: red; */
+  width: 48%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.sec-1 .div-1 .left::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  position: absolute;
+  background-color: rgb(119 65 31/60%);
+  border-radius: 20px;
+}
+
+.sec-1 .div-1 .left video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+}
+.sec-1 .div-1 .left .h {
+  position: relative;
+  bottom: 140px;
+  left: 45px;
+  z-index: 101;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.sec-1 .div-1 .left .h h4 {
+  margin: 10px 0 10px 0;
+}
+
+.sec-1 .div-1 .right {
+  /* background-color: red; */
+  width: 48%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sec-1 .div-1 .right .right-indside {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+.sec-1 .div-1 .right .right-indside em {
+  color: white;
+  margin: 0;
+}
+.sec-1 .div-1 .right .right-indside h2 {
+  color: white;
+  margin: 0 0 15px 0;
+  font-size: 46px;
+}
+
+.sec-1 .div-1 .right .right-indside .para-1 {
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.sec-1 .div-1 .right .right-indside .para-2 {
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.sec-1 .div-1 .right .right-indside .para-3 {
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.sec-1 .div-1 .right .right-indside .para-4 {
+  color: white;
+  margin: 0 0 60px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.sec-1 .div-1 .right .right-indside .para-2 a {
+  color: #bc6c25;
+  text-decoration: none;
+}
+.sec-1 .div-1 .right .right-indside .para-2 a:hover {
+  color: #e76f51;
+}
+.sec-1 .div-1 .right .right-indside .button {
+  margin: 0 auto 0 auto;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.sec-1 .div-1 .right .right-indside .button:hover {
+  color: #dda15e;
+  background-color: white;
 }
