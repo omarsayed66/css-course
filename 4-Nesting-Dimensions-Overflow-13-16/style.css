@@ -1,0 +1,9 @@
+div .title {
+  color: blue;
+}
+
+div div .title,
+div p,
+.title {
+  color: green;
+}
