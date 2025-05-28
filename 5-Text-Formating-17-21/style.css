@@ -1,22 +1,24 @@
-.one {
-  text-transform: uppercase;
+body {
+  overflow: hidden;
 }
-.two {
-  text-transform: capitalize;
-}
-.three {
-  text-transform: lowercase;
+div {
+  background-color: #eee;
+  font-size: 30px;
+  width: 500px;
+  margin: 20px 0;
+  padding: 20px;
 }
 
-.one,
-.two,
 .three {
-  background-color: #eee;
-  font-weight: 700;
-  font-size: 30px;
-  margin: 10px;
-  padding: 20px;
-  border-bottom: 2px solid black;
-  border-radius: 10px 10px 0px 0px;
-  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.5s;
+}
+
+.three:hover {
+  white-space: wrap;
+  overflow: visible;
+  width: 100%;
+  height: 200px;
 }
