@@ -1,4 +1,22 @@
-div {
-  font-size: 100px;
-  text-shadow: 1px 1px red, 2px 2px green, 3px 3px blue;
+.one {
+  text-transform: uppercase;
+}
+.two {
+  text-transform: capitalize;
+}
+.three {
+  text-transform: lowercase;
+}
+
+.one,
+.two,
+.three {
+  background-color: #eee;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  border-radius: 10px 10px 0px 0px;
+  display: inline-block;
 }
