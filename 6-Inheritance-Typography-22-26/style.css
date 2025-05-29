@@ -1,29 +1,18 @@
-.div-1 {
-  border: 2px solid red;
-  padding: 20px 50px;
-  margin: 20px auto;
-  width: 50%;
-  text-align: center;
-}
-.div-2 {
-  border: 2px solid green;
-  padding: 20px 50px;
-  margin: 20px auto;
-  width: 50%;
-  text-align: center;
+div {
+  margin: 20px;
+  font-size: 30px;
 }
 
-.p-1 {
-  background-color: #eee;
-  padding: inherit;
-  border: inherit;
-  width: inherit;
-  margin: inherit;
+.div-1 {
+  font-family: "Open Sans";
+  font-weight: 300;
 }
-.p-2 {
-  background-color: #eee;
-  padding: inherit;
-  border: inherit;
-  width: inherit;
-  margin: inherit;
+.div-2 {
+  font-family: "Cairo";
+  font-weight: 700;
+}
+.div-3 {
+  font-family: "Jomhuria", cursive;
+  font-weight: 400;
+  font-weight: bold;
 }
