@@ -1,18 +1,17 @@
+:root {
+  font-size: 20px;
+}
+
 div {
   margin: 20px;
-  font-size: 30px;
 }
 
 .div-1 {
-  font-family: "Open Sans";
-  font-weight: 300;
+  font-size: 2.5rem;
 }
 .div-2 {
-  font-family: "Cairo";
-  font-weight: 700;
+  font-size: 2rem;
 }
 .div-3 {
-  font-family: "Jomhuria", cursive;
-  font-weight: 400;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
