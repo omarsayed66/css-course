@@ -336,154 +336,6 @@ header .overlay-para-1 .button .right:hover {
   background-color: white;
 }
 
-/* ..............................Section-Two.......................... */
-/* .sec-2 {
-  background-color: #dda15e;
-  height: 120vh;
-
-  padding: 100px;
-}
-
-.sec-2 .div-1 {
-  background-color: antiquewhite;
-
-
-  width: 100%;
-  height: 100%;
-}
-
-.sec-2 .div-2 {
-  text-align: center;
-  padding: 10px 0;
-}
-
-.sec-2 .div-2 em {
-  color: white;
-}
-.sec-2 .div-2 h2 {
-  color: white;
-  font-size: 46px;
-  font-weight: bold;
-  margin: 5px 0 10px 0;
-}
-
-.sec-2 .div-3 {
-  width: 95%;
-  height: 70%;
-  margin: 0 auto;
-  background-color: aqua;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.sec-2 .div-3 .div-one {
-  background-color: red;
-  width: 24%;
-  height: 90%;
-}
-.sec-2 .div-3 .div-two {
-  background-color: red;
-  width: 24%;
-  height: 90%;
-}
-.sec-2 .div-3 .div-three {
-  background-color: red;
-  width: 24%;
-  height: 90%;
-}
-.sec-2 .div-3 .div-four {
-  background-color: red;
-  width: 24%;
-  height: 90%;
-}
-
-.sec-2 .div-3 .div-one-1 {
-  background-image: url(imgs/team/portrait-elegant-old-man-wearing-suit.jpg);
-  background-size: cover;
-  max-width: 100%;
-  height: 100%;
-  position: relative;
-}
-.sec-2 .div-3 .div-one-2 {
-  background-image: url(imgs/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg);
-  background-size: cover;
-  max-width: 100%;
-  height: 100%;
-  position: relative;
-}
-.sec-2 .div-3 .div-one-3 {
-  background-image: url(imgs/team/small-business-owner-drinking-coffee.jpg);
-  background-size: cover;
-  max-width: 100%;
-  height: 100%;
-  position: relative;
-}
-.sec-2 .div-3 .div-one-4 {
-  background-image: url(imgs/team/smiley-business-woman-working-cashier.jpg);
-  background-size: cover;
-  max-width: 100%;
-  height: 100%;
-  position: relative;
-}
-.sec-2 .div-3 .div-one-1-1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  left: 0;
-  bottom: -306px;
-  color: red;
-}
-.sec-2 .div-3 .div-one-1-1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  left: 0;
-  bottom: -306px;
-  color: red;
-}
-
-.sec-2 .div-3 .div-one-1-1 p {
-  background-color: #b24400;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 21px 0px 21px 0px;
-  font-weight: bold;
-}
-
-.sec-2 .div-3 .para-1 {
-  position: relative;
-  left: 0;
-  bottom: -286px;
-  color: red;
-  width: 60%;
-  height: 20%;
-  text-align: center;
-  margin: 10px auto;
-  line-height: 1.6;
-}
-
-.sec-2 .div-3 .div-one ::before,
-.sec-2 .div-3 .div-two ::before,
-.sec-2 .div-3 .div-three ::before,
-.sec-2 .div-3 .div-four ::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  position: absolute;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.35),
-    rgba(188, 108, 37, 1)
-  );
-  border-radius: 20px;
-} */
-
 /* ............Section Two ............ */
 
 .sec-2 {
@@ -612,4 +464,112 @@ header .overlay-para-1 .button .right:hover {
 
 .sec-2 .big-box .box-img .box-img-container:hover .overlay {
   transform: scale(1.2);
+}
+
+/* .......................Section Three............................... */
+
+.sec-3 {
+  background-image: url(imgs/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 143vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-3 .big-box {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-3 .big-box .box-1,
+.sec-3 .big-box .box-2 {
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 38%;
+  height: 87%;
+  padding: 45px;
+  border-radius: 20px;
+}
+
+.sec-3 .big-box .header {
+  text-align: center;
+}
+
+.sec-3 .big-box .header em {
+  font-size: 12px;
+  color: rgb(255 255 255 / 70%);
+}
+
+.sec-3 .big-box .header h4 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 5px 0 0 0;
+  color: white;
+}
+
+.sec-3 .big-box .menu .meal-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.sec-3 .big-box .menu .meal-price .h6-rec {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.sec-3 .big-box .menu .meal-price .h6-rec span {
+  color: white;
+  font-size: 12px;
+  background-color: #bc6c25;
+  padding: 2px 6px;
+  /* border-radius: 0px 4px 4px 0; */
+  border-radius: 4px;
+  font-weight: bold;
+  position: relative;
+}
+
+.sec-3 .big-box .menu .meal-price .h6-rec span::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: -7px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 10px solid #bc6c25;
+}
+
+.sec-3 .big-box .menu .meal-price h6 {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
+.sec-3 .big-box .menu .meal-price strong {
+  color: #dda15e;
+}
+.sec-3 .big-box .menu .meal-price del {
+  color: white;
+  font-weight: 700;
+}
+
+.sec-3 .big-box .menu .desc {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  margin-top: 10px;
+}
+
+.sec-3 .big-box .menu .desc .margin {
+  margin-bottom: 10px;
+}
+
+.sec-3 .big-box .menu small {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+  margin-top: 10px;
 }
