@@ -573,3 +573,334 @@ header .overlay-para-1 .button .right:hover {
   font-size: 14px;
   margin-top: 10px;
 }
+
+/* .......................Section Four............................... */
+
+.sec-4 {
+  background-color: #7c5c52;
+  width: 100%;
+  height: 210vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-4 .container {
+  width: 85%;
+  height: 85%;
+}
+
+.sec-4 .container .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sec-4 .container .header em {
+  color: rgb(255 255 255 / 70%);
+  font-style: italic;
+}
+.sec-4 .container .header h2 {
+  margin: 5px 0;
+  color: white;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.sec-4 .container .timeline {
+  width: 100%;
+  height: 91%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.sec-4 .container .timeline::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 48.6%;
+  background-color: white;
+  border: 5px solid #7c5c52;
+  top: 22px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.sec-4 .container .timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50.1%;
+  margin-left: -3px;
+  z-index: 100;
+}
+
+.sec-4 .container .timeline .timeline-1 {
+  padding: 10px 45px;
+  width: 42%;
+  height: 30%;
+}
+
+.sec-4 .container .timeline .timeline-1 .timeline-background {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.sec-4 .container .timeline .timeline-1 .timeline-background::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 9px;
+  width: 0;
+  z-index: 1;
+  right: -17px;
+  border: medium solid white;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+.sec-4 .container .timeline .timeline-1 .timeline-background .timeline-inside {
+  background-color: #b78752;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header {
+  background-image: url(imgs/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* padding: 30px; */
+  width: 100%;
+  height: 40%;
+  margin: 0;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-left: 40px;
+}
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left
+  .to-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left
+  .to-flex
+  img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left
+  .to-flex
+  .desc {
+  color: white;
+}
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left
+  .to-flex
+  .desc
+  h6 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .header
+  .img-desc-in-left
+  .to-flex
+  .desc
+  em {
+  font-size: 15px;
+  color: rgb(255 255 255 / 70%);
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box {
+  background-color: #b78752;
+  max-width: 100%;
+  max-height: 60%;
+  padding: 20px 30px;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box
+  p {
+  color: rgb(255 255 255 / 70%);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  width: 100%;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box
+  .border {
+  border: 1px solid rgb(255 255 255 / 30%);
+  margin: 20px 0;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box
+  .rating {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box
+  .rating
+  .rating-number {
+  color: white;
+  /* font-weight: 600; */
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  font-size: 15px;
+}
+
+.sec-4
+  .container
+  .timeline
+  .timeline-1
+  .timeline-background
+  .timeline-inside
+  .para-box
+  .rating
+  .rating-stars {
+  width: 70%;
+  text-align: right;
+}
+
+.sec-4 .container .timeline .timeline-2 {
+  margin-left: auto;
+}
+
+.sec-4 .container .timeline .timeline-2 .timeline-background::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 9px;
+  width: 0;
+  z-index: 1;
+  left: -36px;
+  border: medium solid white;
+  border-width: 20px 20px 20px 20px;
+  border-color: transparent white transparent transparent;
+}
+.sec-4 .container .timeline .timeline-2::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 48.6%;
+  background-color: white;
+  border: 5px solid #7c5c52;
+  top: 332px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.sec-4 .container .timeline .timeline-3::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 48.6%;
+  background-color: white;
+  border: 5px solid #7c5c52;
+  top: 645px;
+  border-radius: 50%;
+  z-index: 1;
+}
