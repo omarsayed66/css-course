@@ -904,3 +904,180 @@ header .overlay-para-1 .button .right:hover {
   border-radius: 50%;
   z-index: 1;
 }
+
+/* .......................Section Five............................... */
+
+.sec-5 {
+  background-image: url(imgs/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 140vh;
+  position: relative;
+  padding: 100px 0;
+}
+.sec-5::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(188, 108, 37, 1)
+    ),
+    url(../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sec-5 .container {
+  width: 93%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.sec-5 .container .big-box {
+  width: 100%;
+  height: 100%;
+}
+
+.sec-5 .container .big-box .header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.sec-5 .container .big-box .header em {
+  color: rgb(255 255 255 / 70%);
+  font-size: 20px;
+  font-style: italic;
+}
+.sec-5 .container .big-box .header h2 {
+  margin: 5px 0 0 0;
+  color: white;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.sec-5 .container .big-box .input {
+  width: 47%;
+  float: left;
+}
+
+.sec-5 .container .big-box .input form {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.sec-5 .container .big-box .input form label {
+  display: block;
+  margin-bottom: 15px;
+  font-style: italic;
+  color: rgb(255 255 255 / 90%);
+}
+
+.sec-5 .container .big-box .input form input {
+  border: 1px solid rgb(255 255 255 / 25%);
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.sec-5 .container .big-box .input form input:hover,
+.sec-5 .container .big-box .input form textarea:hover {
+  background-color: #bc6c25;
+}
+
+.sec-5 .container .big-box .input form .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.sec-5 .container .big-box .input form textarea {
+  width: 96%;
+  height: 120px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+.sec-5 .container .big-box .input form textarea::placeholder {
+  font-size: 16px;
+  color: white;
+}
+
+.sec-5 .container .big-box .input form .send {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sec-5 .container .big-box .input form .send button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #bc6c25;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.sec-5 .container .big-box .input form .send button:hover {
+  background-color: white;
+  color: #bc6c25;
+}
+
+.sec-5 .container .big-box .iframe {
+  width: 48.3%;
+  float: right;
+  height: 373px;
+  position: relative;
+}
+
+.sec-5 .container .big-box .iframe::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.sec-5 .container .big-box .iframe:hover::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: rgb(0 0 0 / 70%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.sec-5 .container .big-box .iframe iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
