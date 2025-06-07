@@ -1,29 +1,41 @@
 div {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  background-color: #eee;
+  padding: 20px;
+  border-color: red #2196f3;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+span {
+  background-color: #2196f3;
+  padding: 5px 10px;
   position: absolute;
+  border-radius: 4px;
 }
 
-.green {
-  background-color: green;
-  margin-top: 10px;
-  margin-left: 10px;
+.top-left {
+  border-right: 2px solid red;
+  left: -15px;
+  top: -15px;
+}
+.bottom-left {
+  border-right: 2px solid red;
+  left: -15px;
+  bottom: -15px;
 }
 
-.red {
-  background-color: red;
-  margin-top: 20px;
-  margin-left: 20px;
+.top-right {
+  border-left: 2px solid red;
+  right: -15px;
+  top: -15px;
 }
-
-.blue {
-  background-color: blue;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.black {
-  background-color: black;
-  margin-top: 40px;
-  margin-left: 40px;
+.bottom-right {
+  border-left: 2px solid red;
+  right: -15px;
+  bottom: -15px;
 }
