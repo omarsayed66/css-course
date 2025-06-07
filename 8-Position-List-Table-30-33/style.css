@@ -1,35 +1,40 @@
-.parent {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 600px;
+table {
+  width: 700px;
+  text-align: center;
   margin: 0 auto;
-  border-radius: 6px;
 }
-
-.html,
-.css,
-.js {
+tbody td {
   background-color: #eee;
-  list-style-position: outside;
-  border-radius: 6px;
+}
+caption {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+thead {
+  background-color: #404040;
+}
+thead td {
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+img {
+  width: 50px;
+  height: 50px;
 }
 
-li {
-  background-color: white;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 6px;
+.view {
+  background-color: #03a9f4;
+  color: white;
+  padding: 3px 10px;
+  cursor: pointer;
 }
 
-.css ol {
-  list-style-type: upper-roman;
-}
-
-.js ul {
-  padding: 0;
-}
-
-.js ul li {
-  list-style-position: inside;
+.delete {
+  background-color: #e91e63;
+  color: white;
+  padding: 3px 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
