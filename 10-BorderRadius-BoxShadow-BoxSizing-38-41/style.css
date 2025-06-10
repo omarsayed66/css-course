@@ -1,45 +1,16 @@
 .parent {
-  margin: auto;
-  width: 600px;
+  margin: 0 auto;
+  width: 200px;
 }
 
-.one,
-.two,
-.three {
+.one {
+  margin-top: 100px;
   width: 100px;
   height: 100px;
   background-color: #eee;
-  margin: 50px;
-  text-align: center;
-  border-radius: 50%;
-  float: left;
-  box-shadow: -5px -5px 0 0 red, 5px 5px 0 0 blue;
-  counter-increment: number;
-  position: relative;
-}
-
-.one::before,
-.two::before,
-.three::before {
-  content: counter(number);
-  padding: 5px 10px;
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  left: 35px;
-  top: -13px;
-  border-radius: 50%;
-}
-
-.one::after,
-.two::after,
-.three::after {
-  content: "Element";
-  color: black;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 20px 0;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 12px 30px;
+  border-bottom-right-radius: 12px 30px;
 }
