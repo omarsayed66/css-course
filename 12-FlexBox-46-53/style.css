@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --MainBackgroundColor: #eee;
+  --mainColor: #ff5722;
+  --circle: 50%;
+  --MarginAuto: 40px auto;
+}
+
+div {
+  background-color: var(--MainBackgroundColor);
+  color: var(--mainColor);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--MarginAuto);
+  border-radius: var(--circle);
+  -webkit-border-radius: var(--circle);
+  -moz-border-radius: var(--circle);
+  -ms-border-radius: var(--circle);
+  -o-border-radius: var(--circle);
+  box-shadow: 5px 0px 0px #ff5722, -5px 0px 0px #03a9f4;
+  font-weight: bold;
+}
