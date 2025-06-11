@@ -9,20 +9,20 @@
   --MarginAuto: 40px auto;
 }
 
-div {
+.parent {
   background-color: var(--MainBackgroundColor);
-  color: var(--mainColor);
-  width: 100px;
-  height: 100px;
+  width: 600px;
+  height: 300px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  margin: var(--MarginAuto);
-  border-radius: var(--circle);
-  -webkit-border-radius: var(--circle);
-  -moz-border-radius: var(--circle);
-  -ms-border-radius: var(--circle);
-  -o-border-radius: var(--circle);
-  box-shadow: 5px 0px 0px #ff5722, -5px 0px 0px #03a9f4;
-  font-weight: bold;
+  align-content: space-between;
+}
+
+.parent div {
+  background-color: red;
+  width: calc(94% / 3);
+  padding: 10px;
+  text-align: center;
 }
