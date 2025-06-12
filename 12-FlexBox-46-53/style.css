@@ -2,27 +2,50 @@
   box-sizing: border-box;
 }
 
-:root {
-  --MainBackgroundColor: #eee;
-  --mainColor: #ff5722;
-  --circle: 50%;
-  --MarginAuto: 40px auto;
-}
-
 .parent {
-  background-color: var(--MainBackgroundColor);
+  background-color: #eee;
   width: 600px;
   height: 300px;
+  padding: 10px;
+  color: white;
   display: flex;
+  justify-content: space-between;
+  /* align-content: space-between; */
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: space-between;
 }
 
 .parent div {
-  background-color: red;
-  width: calc(94% / 3);
+  background-color: #607d8b;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: calc(96% / 3);
+}
+
+.one {
+  order: 6;
+  align-self: flex-end;
+}
+
+.two {
+  order: 5;
+}
+
+.three {
+  order: 2;
+  align-self: flex-start;
+}
+
+.four {
+  order: 3;
+}
+
+.five {
+  order: 4;
+}
+
+.six {
+  order: 1;
 }
