@@ -9,22 +9,35 @@
   padding: 10px;
   color: white;
   display: flex;
-  flex-flow: column wrap;
   justify-content: space-between;
-  align-items: flex-end;
 }
 
 .parent div {
-  background-color: #607d8b;
-  padding: 10px;
+  width: calc(70% / 4);
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  height: calc(95% / 3);
+}
+
+.one {
+  background-color: #ff9800;
+  order: 2;
 }
 
 .two {
-  align-self: flex-start;
-  width: 50%;
+  background-color: #8bc34a;
+  order: 3;
+  align-self: flex-end;
+}
+
+.three {
+  background-color: #795548;
+  order: 4;
+}
+
+.four {
+  background-color: #673ab7;
+  order: 1;
+  align-self: flex-end;
 }
