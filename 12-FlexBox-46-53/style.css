@@ -5,7 +5,7 @@
 }
 body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -38,18 +38,16 @@ body {
 
 .article {
   background-color: #ffff;
-  order: 1;
-  flex: 1;
+  flex: 3;
 }
 
 .nav {
   background-color: #d7e8d4;
-  order: 3;
 }
 
 .aside {
   background-color: #f5f5dc;
-  order: 2;
+  flex: 1;
 }
 
 .footer {
@@ -60,4 +58,20 @@ body {
   #main {
     flex-direction: column;
   }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.nav,
+.header,
+.article,
+.aside,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
