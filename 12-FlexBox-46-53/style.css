@@ -58,6 +58,13 @@ body {
   #main {
     flex-direction: column;
   }
+  #main .aside {
+    order: 1;
+  }
+
+  #main .main-2 {
+    order: 3;
+  }
 }
 
 .flex-column {
@@ -74,4 +81,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
 }
