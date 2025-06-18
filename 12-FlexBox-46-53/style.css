@@ -26,3 +26,33 @@
   -o-border-radius: 4px;
   flex: 1;
 }
+
+.all-2 {
+  display: flex;
+  direction: rtl;
+}
+
+.all-2 .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-2 .wrapper div {
+  background-color: #345455;
+  margin: 5px;
+  padding: 9px;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
