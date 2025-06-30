@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+.font-heading {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4,
+h5,
+h6,
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ................................................Header............................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+.sec-1 {
+  background-color: #222429;
+  margin-bottom: 3rem;
+}
+
+header {
+  background-color: antiquewhite;
+  height: 150px;
+}
+
+header .box-header {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  background-color: #fb5b21;
+  flex: 1;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo a {
+  text-decoration: none;
+  font-family: "Emblema One", system-ui;
+}
+
+header .logo a h1 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.3rem;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  color: white;
+}
+
+header nav .up-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #222429;
+}
+
+header nav .up-nav .email {
+  margin-left: 3rem;
+  color: #686a5d;
+}
+header nav .up-nav .email i {
+  margin-right: 0.3rem;
+  color: #fb5b21;
+}
+
+header nav .up-nav .tel {
+  margin-right: 3rem;
+  color: #686a5d;
+}
+header nav .up-nav .tel i {
+  margin-right: 0.5rem;
+  color: #fb5b21;
+}
+
+header nav .down-nav {
+  background-color: #111111;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .ul {
+  margin-left: 3rem;
+  height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+header .ul a:nth-child(1) {
+  color: #fb5b21;
+}
+
+header .ul a {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #bdbdbf;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+header .ul a:hover {
+  color: #fb5b21;
+}
+
+header .ul #page::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid rgba(0, 0, 0, 0);
+  border-bottom: 0;
+  border-left: 0.3em solid rgba(0, 0, 0, 0);
+}
+
+header .ul #page {
+  position: relative;
+}
+/* header .ul #page:hover .bu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  transition: 0.5s;
+  opacity: 1;
+} */
+header .ul #page .bu.hover {
+  transform: rotateX(0deg);
+  visibility: visible;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+header .ul #page .bu {
+  display: block;
+  visibility: hidden;
+  top: 100%;
+  transform: rotateX(-75deg);
+  transform-origin: 0% 0%;
+  transition: 0.5s;
+  opacity: 0;
+
+  position: absolute;
+  left: 0;
+  top: 110px;
+
+  list-style: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+header .ul #page .bu li {
+  font-size: 1rem;
+}
+
+header nav .down-nav .icon {
+  margin-right: 10px;
+}
+
+header nav .down-nav span {
+  padding-right: 10px;
+}
+
+header nav .down-nav .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5rem;
+  width: 100px;
+}
+
+header nav .down-nav .icon span i {
+  border: 1px solid #bdbdbf;
+  color: #bdbdbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+header nav .down-nav .icon span i:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+header button span {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org…dth='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 100px;
+  height: 100px;
+}
+
+/* ..............................................Section One............................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+.sec-1 .container {
+  padding: 3rem;
+}
+.sec-1 .container .mini-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.sec-1 .h-1 {
+  width: calc(100% / 1);
+}
+
+.sec-1 .h-1 h1 {
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Emblema One", system-ui;
+  padding: 0 rem;
+  margin-top: 3rem;
+  color: #bdbdbf;
+}
+
+.sec-1 .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.sec-1 .box-1,
+.sec-1 .box-2,
+.sec-1 .box-3 {
+  width: calc(100% / 4);
+  height: 500px;
+}
+
+.sec-1 .box-1,
+.sec-1 .box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.sec-1 .box-1 img {
+  margin-bottom: 1rem;
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-1 .box-1 .icon {
+  height: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.sec-1 .box-1 .icon i {
+  font-size: 3rem;
+}
+
+.animate-up-down {
+  position: relative;
+  animation: animateUpDown 1s ease infinite;
+}
+
+@keyframes animateUpDown {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.sec-1 .box-1 .icon i,
+.sec-1 .box-1 p {
+  color: #bdbdbf;
+}
+.sec-1 .box-1 p {
+  line-height: 1.6;
+}
+
+.sec-1 .box-2 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex: 1;
+}
+
+/* .sec-1 .box-2 .img {
+  height: 100%;
+} */
+
+.sec-1 .box-2 .img img {
+  min-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+}
+
+.sec-1 .box-3 .icon i,
+.sec-1 .box-3 p {
+  color: #bdbdbf;
+}
+.sec-1 .box-3 p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.sec-1 .box-3 img {
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-1 .box-3 .icon {
+  height: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.sec-1 .box-3 .icon i {
+  font-size: 3rem;
+}
+
+/* .............................................Section One End......................................... */
+
+/* ..............................................Section Two............................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-2 {
+  height: 120vh; /*  */
+  padding: 3rem;
+}
+.sec-2 .container {
+  background-color: bisque; /*  */
+  width: 100%; /*  */
+  height: 100%; /*  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-2 .container .left {
+  background-color: red;
+  height: 100%;
+  flex: 2;
+  padding: 0 3rem;
+}
+
+.sec-2 .container .right {
+  background-color: brown;
+  height: 100%;
+  flex: 3;
+  padding: 0 3rem;
+}

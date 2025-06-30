@@ -1,0 +1,165 @@
+@media only screen and (max-width: 990px) {
+  /* ........................Header....................... */
+  header {
+    background-color: black;
+    height: 100px;
+    position: relative;
+  }
+
+  header.head-active {
+    height: 350px;
+  }
+
+  header .box-header {
+    align-items: flex-start;
+    flex-direction: column;
+    height: 0px;
+  }
+
+  header .logo {
+    background-color: black;
+    height: 50px;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  header .logo a h1 {
+    color: #fb5b21;
+    font-size: 3rem;
+  }
+
+  header nav .up-nav {
+    display: none;
+  }
+
+  header nav .down-nav {
+    background-color: transparent;
+  }
+
+  header .ul {
+    display: none;
+    margin-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  header .ul.is-active {
+    display: flex;
+  }
+
+  header .ul a {
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+  }
+
+  header .ul a #home {
+    margin-top: 0;
+  }
+
+  header .ul #page::after {
+    transform: rotate(-90deg);
+  }
+
+  header .ul #page {
+    position: relative;
+  }
+
+  header .ul #page .bu.hover {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  header .ul #page .bu {
+    left: 74px;
+    top: -13px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+  }
+
+  header .ul #page .bu li {
+    margin-top: 10px;
+  }
+
+  header nav .down-nav .icon {
+    display: none;
+  }
+
+  /* ..................Menu........... */
+
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .menu.active {
+    top: 12%;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  /* .......................Section One ............... */
+  .sec-1 .h-1 h1 {
+    font-size: 4rem;
+  }
+  /* .......................Section One Boxes............... */
+  .sec-1 .boxes {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sec-1 .box-1,
+  .sec-1 .box-2,
+  .sec-1 .box-3 {
+    width: calc(100% / 1);
+    margin-bottom: 3rem;
+  }
+  .sec-1 .box-2 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  header {
+    height: 150px;
+  }
+
+  header .menu {
+    right: 20px;
+    top: 70%;
+  }
+}
