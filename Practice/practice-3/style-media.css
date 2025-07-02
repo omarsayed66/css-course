@@ -151,8 +151,45 @@
   .sec-1 .box-2 {
     padding: 0;
   }
+
+  /* .............................................Section One End......................................... */
+
+  /* ..............................................Section Two............................................ */
+  /* ..................................................................................................... */
+  /* ..................................................................................................... */
+  /* ..................................................................................................... */
+  /* ..................................................................................................... */
+
+  .sec-2 .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .sec-2 .container .left {
+    /* width: calc(100% / 1); */
+    padding: 0 1rem;
+  }
+
+  .sec-2 .container .left .box-img,
+  .sec-2 .container .left .img-2 {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 575px) {
+  .sec-2 .container .bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sec-2 .container .bottom .box-1,
+  .sec-2 .container .bottom .box-2 {
+    width: calc(100% / 1);
+  }
+  .sec-2 .container .right .top h1 {
+    font-size: calc(1.525rem + 3.3vw);
+  }
+}
 @media only screen and (max-width: 330px) {
   header {
     height: 150px;
@@ -161,5 +198,17 @@
   header .menu {
     right: 20px;
     top: 70%;
+  }
+
+  .menu.active {
+    top: 25%;
+  }
+
+  header .logo a h1 {
+    font-size: 3rem;
+  }
+
+  .sec-2 .container .right .top h1 {
+    font-size: calc(1.525rem + 3.3vw);
   }
 }
