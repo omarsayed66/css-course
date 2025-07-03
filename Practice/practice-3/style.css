@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+/* .............................................................Delete Later */
 h1,
 h2,
 h3,
@@ -516,4 +522,198 @@ header button span {
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.2;
+}
+
+/* .............................................Section Two End......................................... */
+
+/* ............................................Section Three............................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-3 {
+  background-color: #222429;
+  margin: 3rem 0;
+  padding: 3rem;
+}
+
+.sec-3 .container {
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec-3 .container .box-1,
+.sec-3 .container .box-2,
+.sec-3 .container .box-3,
+.sec-3 .container .box-4 {
+  padding: 0 3rem;
+  margin-top: 1.5rem;
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeIn;
+}
+
+.sec-3 .container .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: calc(100% / 4); */
+}
+
+.sec-3 .container .box .icon {
+  width: 80px;
+  height: 80px;
+  background: #111111;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-3 .container .box .icon i {
+  color: #fb5b21;
+  font-size: calc(1.275rem + 0.3vw) !important;
+  font-weight: bold;
+}
+
+.sec-3 .container .box .para {
+  padding-left: 1.5rem;
+  line-height: 1;
+}
+.sec-3 .container .box .para h5 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.sec-3 .container .box .para h1 {
+  color: #bdbdbf;
+  margin-bottom: 0;
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.omar {
+  visibility: visible;
+  animation-delay: 0.1s;
+  animation-name: fadeIn;
+}
+
+/* ...........................................Section Three End......................................... */
+
+/* ............................................Section Four............................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-4 {
+  padding: 3rem;
+  position: relative;
+  margin-bottom: 135px;
+}
+
+.sec-4 .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc (3rem * -1);
+  margin-right: calc (3rem / -2);
+  margin-left: calc (3rem / -2);
+}
+
+.sec-4 .container::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% - 120px);
+  top: 185px;
+  left: 0px;
+  z-index: -1;
+  background: #222429;
+}
+
+.sec-4 .container .box-1,
+.sec-4 .container .box-2,
+.sec-4 .container .box-3 {
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  margin-top: 3rem;
+  width: calc(100% / 3);
+}
+
+.sec-4 .container .box {
+  background: linear-gradient(#f4f5f8 50%, #222429);
+  text-align: center;
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.sec-4 .container img {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.sec-4 .container h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  margin: 1.5rem 0;
+}
+
+.sec-4 .container p {
+  color: #f4f5f8;
+  margin-bottom: 1rem;
+}
+
+.sec-4 .container a {
+  letter-spacing: 1px;
+  color: #fb5b21;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.sec-4 .container a:hover {
+  color: #c9491a;
+}
+
+.sec-4 .container .disccount {
+  text-align: center;
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  /* margin-top: 3rem; */
+  margin: 3rem auto 0 auto;
+}
+
+.sec-4 .container .disccount h1 span {
+  color: #fb5b21;
+  font-size: calc(1.475rem + 2.7vw);
+  line-height: 1.2;
+}
+
+.sec-4 .container .disccount h1 {
+  color: #bdbdbf;
+  margin-bottom: 1.5rem;
+  font-size: calc(1.475rem + 2.7vw);
+  line-height: 1.2;
+}
+
+.sec-4 .container .disccount a {
+  color: white;
+  font-family: "Emblema One", system-ui;
+  transition: 0.5s;
+  padding: 1rem 3rem;
+  background-color: #fb5b21;
+  border-color: #fb5b21;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.sec-4 .container .disccount a:hover {
+  color: #111111;
 }
