@@ -23,3 +23,138 @@ page.addEventListener("click", () => {
 function omar() {
   bus.classList.toggle("hover");
 }
+
+// ..............................................................................For Section Five
+
+const bigBox = document.getElementsByClassName("big-box");
+const bigBox2 = document.getElementsByClassName("big-box-2");
+const bigBox3 = document.getElementsByClassName("big-box-3");
+
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+
+const breakfast = document.getElementById("main");
+const launch = document.getElementById("launch");
+const dinner = document.getElementById("dinner");
+
+breakfast.addEventListener("click", () => {
+  brk();
+});
+
+function brk() {
+  one.classList.remove("no-active");
+  three.classList.remove("active");
+  two.classList.remove("active");
+
+  breakfast.classList.add("active");
+  dinner.classList.remove("active");
+
+  launch.classList.remove("active");
+}
+
+launch.addEventListener("click", () => {
+  laun();
+});
+
+function laun() {
+  one.classList.add("no-active");
+  three.classList.remove("active");
+  two.classList.add("active");
+
+  breakfast.classList.remove("active");
+  dinner.classList.remove("active");
+
+  launch.classList.add("active");
+}
+
+dinner.addEventListener("click", () => {
+  dinn();
+});
+
+function dinn() {
+  one.classList.add("no-active");
+  two.classList.remove("active");
+  three.classList.add("active");
+
+  breakfast.classList.remove("active");
+  launch.classList.remove("active");
+  dinner.classList.add("active");
+}
+
+// ..................................................Slides
+
+const slide1 = document.getElementById("slide-1");
+const slide2 = document.getElementById("slide-2");
+
+const button1 = document.getElementById("button-1");
+const button2 = document.getElementById("button-2");
+
+const slides = document.getElementById("slides");
+
+// button1.addEventListener("click", () => {
+//   zr1();
+// });
+
+// function zr1() {
+//   slides.classList.remove("left-570");
+//   slides.classList.add("left-20");
+// }
+
+// // ...
+
+// button2.addEventListener("click", () => {
+//   zr2();
+// });
+
+// function zr2() {
+//   slides.classList.remove("left-20");
+
+//   slides.classList.add("left-570");
+// }
+
+// ...........................................................
+
+button1.addEventListener("click", () => {
+  zr1();
+});
+
+function zr1() {
+  slide1.classList.add("active");
+  slide1.classList.remove("no-active");
+
+  slide2.classList.remove("active");
+  slide2.classList.add("no-active");
+}
+
+// ...
+
+button2.addEventListener("click", () => {
+  zr2();
+});
+
+function zr2() {
+  slide2.classList.add("active");
+  slide2.classList.remove("no-active");
+
+  slide1.classList.remove("active");
+  slide1.classList.add("no-active");
+}
+
+// button1.addEventListener("click", () => {
+//   zr1();
+// });
+
+// function zr1() {
+//   slides.classList.add("trans-60");
+// }
+
+// // ...
+
+// button2.addEventListener("click", () => {
+//   zr2();
+// });
+
+// function zr2() {
+//   slides.classList.remove("trans-60");
+// }

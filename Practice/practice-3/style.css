@@ -717,3 +717,539 @@ header button span {
 .sec-4 .container .disccount a:hover {
   color: #111111;
 }
+
+/* ...........................................Section Four End......................................... */
+
+/* ............................................Section Five............................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-5 {
+  padding: 3rem 0;
+}
+
+.sec-5 .header {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sec-5 .header h5 {
+  color: #fb5b21;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec-5 .header h1 {
+  font-size: calc(1.525rem + 2.85vw);
+  line-height: 1.2;
+}
+
+.sec-5 nav {
+  text-align: center;
+}
+
+.sec-5 .container ul {
+  background-color: #222429;
+  border-radius: 50rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.sec-5 .container ul a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  width: 110px;
+}
+
+.sec-5 .container ul a.active {
+  background-color: #fb5b21;
+}
+
+.sec-5 .container ul a#main,
+.sec-5 .container ul a#launch,
+.sec-5 .container ul a#dinner {
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+}
+/* .sec-5 .container ul li.active {
+  background-color: #fb5b21;
+  border-radius: 50rem;
+} */
+
+.sec-5 .container .big-box.box,
+.sec-5 .container .big-box-2.box,
+.sec-5 .container .big-box-3.box {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.sec-5 .container .big-box-2 .box {
+  display: none;
+}
+.sec-5 .container .big-box-3 .box {
+  display: none;
+}
+
+.sec-5 .container .big-box .box.no-active {
+  display: none;
+}
+
+.sec-5 .container .big-box-2 .box.active {
+  display: flex;
+}
+.sec-5 .container .big-box-3 .box.active {
+  display: flex;
+}
+
+.sec-5 .container .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec-5 .container .x {
+  position: relative;
+  width: calc(100% / 4);
+}
+.sec-5 .container .box img {
+  transition: 0.5s;
+  max-width: 100%;
+  height: 100%;
+}
+
+.sec-5 .container .box img:hover {
+  opacity: 0.7;
+}
+.sec-5 .container .box .para {
+  background-color: #222429;
+  border-radius: 50rem;
+  color: #fb5b21;
+  padding: 0.25rem 1rem;
+  margin: 0 1.5rem 1.5rem 0;
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  margin: 0 1.5rem 1.5rem 0;
+  cursor: pointer;
+}
+
+/* ...........................................Section Five End.......................................... */
+
+/* ............................................Section Six.............................................. */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-6 {
+  padding: 3rem;
+}
+
+.sec-6 .header {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sec-6 .header h5 {
+  color: #fb5b21;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec-6 .header h1 {
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
+}
+
+.sec-6 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec-6 .container .box {
+  max-width: 100%;
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  margin-top: 3rem;
+  width: calc(100% / 3);
+}
+
+.sec-6 .container .box .mini-box {
+  position: relative;
+}
+
+.sec-6 .container .box .mini-box .img {
+  border-radius: 50%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.sec-6 .container .box .mini-box .img img {
+  max-width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.sec-6 .container .box .mini-box .hover {
+  position: absolute;
+  top: calc(100% - 100px);
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 36, 41, 0.9);
+  transition: 0.5s;
+  opacity: 0;
+
+  border-top-left-radius: 50% 60% !important;
+  /* border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-radius: 50%; */
+}
+
+.sec-6 .container .box .mini-box:hover .hover {
+  top: 0;
+  opacity: 1;
+}
+
+.sec-6 .container .box .mini-box:hover img {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.sec-6 .container .box .mini-box .hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-6 .container .box .mini-box .hover a {
+  color: #000;
+  background-color: #f4f5f8;
+  border-color: #f4f5f8;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+
+  /* padding: 0.375rem 0.75rem; */
+  padding: 0.4rem 1rem;
+
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  transition: 0.5s;
+  border-radius: 50%;
+  /*...*/
+}
+
+.sec-6 .container .box .mini-box .bottom {
+  height: 100px;
+  width: 100%;
+  background: rgba(34, 36, 41, 0.9);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.sec-6 .container .box .mini-box .bottom h5 {
+  color: #f4f5f8;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.sec-6 .container .box .mini-box .bottom p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #bdbdbf;
+  font-size: 0.875em;
+}
+
+/* ...........................................Section Six End........................................... */
+
+/* ..........................................Section Seven.............................................. */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-7 {
+  margin: 3rem 0;
+}
+
+.sec-7 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sec-7 .container .left,
+.sec-7 .container .right {
+  width: calc(100% / 2);
+}
+
+.sec-7 .container .left .img {
+  border-top-left-radius: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec-7 .container .left .img img {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  object-fit: cover;
+}
+
+.sec-7 .container .right {
+  background-color: #222429;
+  padding: 3rem;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+}
+
+.sec-7 .container .right .header {
+  margin-bottom: 3rem;
+}
+
+.sec-7 .container .right .header h5 {
+  color: #fb5b21;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.sec-7 .container .right .header h1 {
+  color: #bdbdbf;
+  text-transform: capitalize;
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
+}
+
+.sec-7 .container .right .box-para p i {
+  color: #fb5b21;
+  margin-right: 1rem;
+  font-weight: 900;
+}
+.sec-7 .container .right .box-para p {
+  color: #f4f5f8;
+  font-size: calc(1.275rem + 0.3vw);
+  margin-bottom: 1.5rem;
+}
+
+.sec-7 .container .right .box-img {
+  display: flex;
+  align-items: center;
+}
+
+.sec-7 .container .right .box-img img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.sec-7 .container .right .box-img .content {
+  padding-left: 1.5rem;
+  color: #bdbdbf;
+}
+.sec-7 .container .right .box-img .content h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.sec-7 .container .right .box-img .content span {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.875em;
+}
+
+.sec-7 .container .right .button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+}
+
+.sec-7 .container .right .button .button-1,
+.sec-7 .container .right .button .button-2 {
+  position: relative;
+  margin: 0 5px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #fb5b21;
+  font-size: 22px;
+  border-radius: 45px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sec-7 .container .right .button .button-1:hover,
+.sec-7 .container .right .button .button-2:hover {
+  color: #000;
+}
+
+/* .slides.left-20 {
+  left: -20px;
+}
+
+.slides.left-570 {
+  left: -570px;
+} */
+
+/* ............ */
+
+.slides .slide-2 {
+  display: none;
+}
+
+.slides .active {
+  display: block !important;
+}
+
+.slides .no-active {
+  display: none !important;
+}
+
+/* ............ */
+
+/* .trans-60 {
+  transform: translateX(-60%);
+}
+.trans-0 {
+  transform: translateX(0%);
+}
+
+.slides {
+  width: 200%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slides .slide-1,
+.slides .slide-2 {
+  width: 40%;
+} */
+
+/* //........................... */
+
+/* .slides {
+  display: flex;
+  width: 200%;
+  transform: translateX(-55%);
+  gap: 100px;
+} */
+
+/* .slides {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .slides {
+  transition: 1s;
+  display: flex;
+  width: 1072px;
+  position: relative;
+  left: -570px;
+
+  top: 0;
+} */
+/* 
+.slide-1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.slide-2 {
+  margin-left: 20px;
+  margin-right: 20px;
+} */
+
+/* .slide-1 {
+  display: none;
+} */
+
+/* .slide-1,
+.slide-2 {
+  width: calc(100% / 2);
+} */
+
+/* .slide-1 {
+  transform: translateX(-527px);
+} */
+/* .slide-2 {
+  transform: translateX(-1008px);
+} */
+
+/* .slide-1 {
+  display: none;
+  width: 429.5px;
+  min-height: 1px;
+  float: left;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.slide-2 {
+  display: none;
+  width: 429.5px;
+  min-height: 1px;
+  float: left;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.slide-3 {
+  width: 429.5px;
+  min-height: 1px;
+  float: left;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+} */
