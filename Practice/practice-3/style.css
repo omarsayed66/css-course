@@ -1,15 +1,16 @@
+/* Reset Settings */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
+/* For Button Scroll */
+html {
+  scroll-behavior: smooth;
 }
-/* .............................................................Delete Later */
+
+/* Font Family For Specific Headers  */
 h1,
 h2,
 h3,
@@ -19,6 +20,7 @@ h3,
   font-style: normal;
 }
 
+/* Font Family For  Headers  */
 h4,
 h5,
 h6,
@@ -155,12 +157,7 @@ header .ul #page::after {
 header .ul #page {
   position: relative;
 }
-/* header .ul #page:hover .bu {
-  transform: rotateX(0deg);
-  visibility: visible;
-  transition: 0.5s;
-  opacity: 1;
-} */
+
 header .ul #page .bu.hover {
   transform: rotateX(0deg);
   visibility: visible;
@@ -239,6 +236,8 @@ header button span {
   height: 100px;
 }
 
+/* .............................................Header End............................................. */
+
 /* ..............................................Section One............................................ */
 /* ..................................................................................................... */
 /* ..................................................................................................... */
@@ -313,6 +312,8 @@ header button span {
   animation: animateUpDown 1s ease infinite;
 }
 
+/* Animation Up To Down For Arrows */
+
 @keyframes animateUpDown {
   0% {
     top: 0px;
@@ -338,10 +339,6 @@ header button span {
   padding-right: 3rem;
   flex: 1;
 }
-
-/* .sec-1 .box-2 .img {
-  height: 100%;
-} */
 
 .sec-1 .box-2 .img img {
   min-height: 500px;
@@ -398,20 +395,6 @@ header button span {
   justify-content: space-between;
 }
 
-/* .sec-2 .container {
-  height: 600px;
-} */
-
-/* .sec-2 .container .right .top,
-.sec-2 .container .right .center,
-.sec-2 .container .right .bottom {
-  height: calc(100% / 3);
-} */
-
-/* .sec-2 .container .left,
-.sec-2 .container .right {
-  height: 100%;
-} */
 .sec-2 .container .left {
   flex: 2;
   padding: 0 3rem;
@@ -427,7 +410,7 @@ header button span {
   position: absolute;
   animation: animateRotate 8s linear infinite;
 }
-
+/* Animation For A Circle Above Photo */
 @keyframes animateRotate {
   100% {
     transform: rotate(360deg);
@@ -435,7 +418,6 @@ header button span {
 }
 
 .sec-2 .container .left .box-img {
-  /* height: 100%; */
   min-height: 500px;
 }
 
@@ -443,12 +425,10 @@ header button span {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-
   border-top-left-radius: 50%;
   border-top-right-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
   border-bottom-right-radius: 0.6rem;
-
   position: relative;
 }
 
@@ -605,7 +585,7 @@ header button span {
 
 /* ...........................................Section Three End......................................... */
 
-/* ............................................Section Four............................................ */
+/* ............................................Section Four............................................. */
 /* ..................................................................................................... */
 /* ..................................................................................................... */
 /* ..................................................................................................... */
@@ -685,7 +665,6 @@ header button span {
   text-align: center;
   padding-right: calc(3rem / 2);
   padding-left: calc(3rem / 2);
-  /* margin-top: 3rem; */
   margin: 3rem auto 0 auto;
 }
 
@@ -772,11 +751,6 @@ header button span {
   color: #fff;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
-  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
   width: 110px;
 }
 
@@ -793,10 +767,6 @@ header button span {
   -ms-border-radius: 50rem;
   -o-border-radius: 50rem;
 }
-/* .sec-5 .container ul li.active {
-  background-color: #fb5b21;
-  border-radius: 50rem;
-} */
 
 .sec-5 .container .big-box.box,
 .sec-5 .container .big-box-2.box,
@@ -934,12 +904,7 @@ header button span {
   background: rgba(34, 36, 41, 0.9);
   transition: 0.5s;
   opacity: 0;
-
   border-top-left-radius: 50% 60% !important;
-  /* border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-radius: 50%; */
 }
 
 .sec-6 .container .box .mini-box:hover .hover {
@@ -964,16 +929,12 @@ header button span {
   border-color: #f4f5f8;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
-
-  /* padding: 0.375rem 0.75rem; */
   padding: 0.4rem 1rem;
-
   text-align: center;
   width: 38px;
   height: 38px;
   transition: 0.5s;
   border-radius: 50%;
-  /*...*/
 }
 
 .sec-6 .container .box .mini-box .bottom {
@@ -1038,7 +999,6 @@ header button span {
 .sec-7 .container .left .img img {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
   object-fit: cover;
 }
 
@@ -1136,16 +1096,6 @@ header button span {
   color: #000;
 }
 
-/* .slides.left-20 {
-  left: -20px;
-}
-
-.slides.left-570 {
-  left: -570px;
-} */
-
-/* ............ */
-
 .slides .slide-2 {
   display: none;
 }
@@ -1158,98 +1108,403 @@ header button span {
   display: none !important;
 }
 
-/* ............ */
+/* ..........................................Section Seven End.......................................... */
 
-/* .trans-60 {
-  transform: translateX(-60%);
-}
-.trans-0 {
-  transform: translateX(0%);
+/* ..........................................Section Eight.............................................. */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.sec-8 {
+  padding: 3rem;
 }
 
-.slides {
-  width: 200%;
+.sec-8 .header {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sec-8 .header h5 {
+  color: #fb5b21;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec-8 .header h1 {
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
+}
+
+.sec-8 .container {
   display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(3rem * -1);
+  margin-right: calc(3rem / -2);
+  margin-left: calc(3rem / -2);
+}
+
+.sec-8 .container .box {
+  width: calc(100% / 3);
+  padding: 0 1.5rem;
+  margin-top: 3rem;
+}
+
+.sec-8 .container .box .img {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec-8 .container .box .img img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s;
+  vertical-align: middle;
+}
+
+.sec-8 .container .box .mini-box:hover .img img {
+  transform: scale(1.2);
+}
+
+.sec-8 .container .box .foot {
+  background-color: #222429;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.sec-8 .container .box .foot .date {
+  color: #bdbdbf;
+  text-align: center;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid #dee2e6;
+}
+
+.sec-8 .container .box .foot .date h6 {
+  color: #fb5b21;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.sec-8 .container .box .foot a {
+  color: #f4f5f8;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ..........................................Section Eight End.......................................... */
+
+/* ............................................Instagram................................................ */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.instagram {
+  margin-top: 3rem;
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.instagram a {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.instagram a i {
+  color: #bdbdbf;
+  font-size: 2rem;
+}
+
+.instagram .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram .container .img {
+  width: calc(100% / 6);
+}
+.instagram .container .img img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.instagram .container .img img:hover {
+  opacity: 0.9;
+}
+
+/* ..........................................Instagram End.............................................. */
+
+/* ..........................................Befor Footer............................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+.before-footer {
+  background-color: #222429;
+  color: #bdbdbf;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.before-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.before-footer .container .left,
+.before-footer .container .right {
+  padding-right: calc(3rem / 2);
+  padding-left: calc(3rem / 2);
+  width: calc(100% / 4);
+}
+
+.before-footer .container .left {
+  flex: 7;
+}
+.before-footer .container .right {
+  flex: 3;
+}
+
+.before-footer .container .left .boxses {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.slides .slide-1,
-.slides .slide-2 {
-  width: 40%;
-} */
+.before-footer .container .left .boxses .box {
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
 
-/* //........................... */
+.before-footer .container .left .boxses .box h3 {
+  text-transform: capitalize;
+  color: #f4f5f8;
+  margin-bottom: 1.5rem;
+  font-size: calc(1.3rem + 0.6vw);
+}
 
-/* .slides {
+.before-footer .container .left .boxses .box .address {
   display: flex;
-  width: 200%;
-  transform: translateX(-55%);
-  gap: 100px;
-} */
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.before-footer .container .left .boxses .box .address i {
+  color: #fb5b21;
+  margin-right: 0.5rem;
+}
 
-/* .slides {
+.before-footer .container .left .icons {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.before-footer .container .left .icons a {
+  margin-right: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+  background-color: #fb5b21;
+  border-color: #fb5b21;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.before-footer .container .left .icons a i {
+  transition: 0.5s;
+}
+
+.before-footer .container .left .icons a:hover i {
+  color: #000;
+}
+
+.before-footer .container .left .nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.before-footer .container .left .nav a {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #bdbdbf;
+}
+.before-footer .container .left .nav a i {
+  color: #fb5b21;
+  margin-right: 0.5rem;
+}
+
+.before-footer .container .right .box {
+  background-color: #111111;
+  padding: 3rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.before-footer .container .right .box h3 {
+  text-transform: capitalize;
+  color: #f4f5f8;
+  margin-bottom: 1.5rem;
+  font-size: calc(1.3rem + 0.6vw);
+}
+.before-footer .container .right .box h4 {
+  text-transform: uppercase;
+  color: #f4f5f8;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.before-footer .container .right .box p {
+  font-size: 0.875em;
+  margin-bottom: 1rem;
+}
+.before-footer .container .right .box form .inputs {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-} */
+  align-items: stretch;
+  width: 100%;
+}
+.before-footer .container .right .box form .inputs input {
+  position: relative;
+  flex: 3 1 auto;
+  width: 1%;
+  min-width: 0;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.before-footer .container .right .box form .inputs button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  color: white;
+  background-color: #fb5b21;
+  border-color: #fb5b21;
+  transition: 0.5s;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-family: "Emblema One", system-ui;
+  flex: 2;
+  outline: none;
+}
 
-/* .slides {
-  transition: 1s;
+.before-footer .container .right .box form .inputs button:hover {
+  color: #000;
+}
+
+/* ......................................before Footer End.............................................. */
+
+/* .............................................Footer.................................................. */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+footer {
+  background-color: #111111;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+footer .container {
   display: flex;
-  width: 1072px;
-  position: relative;
-  left: -570px;
-
-  top: 0;
-} */
-/* 
-.slide-1 {
-  margin-left: 20px;
-  margin-right: 20px;
+  flex-wrap: wrap;
+  font-size: calc(1rem + 0.3vw);
+  text-align: center;
 }
-.slide-2 {
-  margin-left: 20px;
-  margin-right: 20px;
-} */
 
-/* .slide-1 {
-  display: none;
-} */
-
-/* .slide-1,
-.slide-2 {
-  width: calc(100% / 2);
-} */
-
-/* .slide-1 {
-  transform: translateX(-527px);
-} */
-/* .slide-2 {
-  transform: translateX(-1008px);
-} */
-
-/* .slide-1 {
-  display: none;
-  width: 429.5px;
-  min-height: 1px;
-  float: left;
-  backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
+footer .container .left,
+footer .container .right {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: calc(100% / 3);
+  line-height: 0;
 }
-.slide-2 {
-  display: none;
-  width: 429.5px;
-  min-height: 1px;
-  float: left;
-  backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
+footer .container .left {
+  flex: 2;
 }
-.slide-3 {
-  width: 429.5px;
-  min-height: 1px;
-  float: left;
-  backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-} */
+footer .container .right {
+  flex: 1;
+}
+
+footer .container div,
+footer .container div {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+footer .container div p {
+  color: #bdbdbf;
+}
+footer .container div a {
+  color: #f4f5f8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* .............................................Button.................................................. */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+/* ..................................................................................................... */
+
+#button {
+  /* display: inline !important; */
+  display: none;
+  position: fixed;
+  display: none;
+  right: 0px;
+  bottom: 0px;
+  z-index: 99;
+  border-radius: 0px;
+  font-family: "Emblema One", system-ui;
+  transition: 0.5s;
+  font-size: calc(1.275rem + 0.3vw) !important;
+  padding: 2.2rem 1.2rem;
+  color: #fff;
+  background-color: #fb5b21;
+  border-color: #222429;
+}
