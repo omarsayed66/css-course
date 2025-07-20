@@ -7,22 +7,120 @@
 .grid {
   background-color: #ddd;
   padding: 20px;
-  width: 800px;
-  height: 400px;
+
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(12, auto);
   gap: 20px;
-  align-content: space-between;
+  overflow: hidden;
 }
 
 .grid div {
-  background-color: #e91e63;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #fff;
+  color: black;
+
   border-radius: 4px;
   font-size: 20px;
   font-weight: bold;
+  padding: 20px;
+  position: relative;
+}
+.grid .three,
+.grid .five,
+.grid .eight {
+  background-color: black !important;
+  color: white !important;
+}
+
+.one {
+  grid-column: span 6;
+  grid-row: span 4;
+}
+
+.two {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+.three {
+  grid-column: span 3;
+  grid-row: span 10;
+}
+.four {
+  grid-column: span 3;
+  grid-row: span 6;
+}
+.five {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.six {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+.seven {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.eight {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.nine {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.ten {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+h5 {
+  margin-bottom: 15px;
+  opacity: 50%;
+}
+.grid div::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: #fb5a27;
+  left: 0;
+  bottom: 0;
+}
+.grid div::after {
+  content: "''";
+  color: #ccc;
+  position: absolute;
+  font-size: 65px;
+  right: 10px;
+  bottom: -30px;
+  transform: rotate(12deg);
+}
+
+.grid div {
+  background-color: #fff;
+  color: black;
+
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+}
+
+.grid .three,
+.grid .five,
+.grid .eight {
+  background-color: black !important;
+  color: white !important;
+}
+
+@media (max-width: 991px) {
+  .grid div {
+    grid-column: span 12 !important;
+    grid-row: auto !important;
+  }
 }
