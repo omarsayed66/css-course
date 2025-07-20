@@ -118,6 +118,10 @@ h5 {
   color: white !important;
 }
 
+p {
+  color: rgb(0 0 0 / 50%);
+}
+
 @media (max-width: 991px) {
   .grid div {
     grid-column: span 12 !important;
