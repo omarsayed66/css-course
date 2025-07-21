@@ -20,7 +20,7 @@ nav,
 section,
 aside,
 footer {
-  background-color: rgb(38, 175, 164);
+  background-color: rgb(51, 95, 57);
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
@@ -37,7 +37,6 @@ header {
 }
 nav {
   grid-area: nav;
-  grid-row-end: 4;
 }
 section {
   grid-area: section;
@@ -47,27 +46,18 @@ aside {
 }
 footer {
   grid-area: footer;
-  grid-column-start: 2;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 10% 1fr 10% 10%;
+    grid-template-rows: 10% 20% 1fr 10% 10%;
     grid-template-areas:
       "header"
       "nav"
       "section"
       "aside"
       "footer";
-  }
-
-  nav {
-    grid-area: nav;
-  }
-
-  footer {
-    grid-area: footer;
   }
 }
