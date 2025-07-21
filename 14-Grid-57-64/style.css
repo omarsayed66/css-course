@@ -9,10 +9,10 @@
   /* min-height: 100vh; */
   display: grid;
   gap: 10px;
-  grid-template-columns: 20% 1fr 15%;
+  grid-template-columns: 1fr 18% 18%;
   grid-template-rows: 10% 1fr 10%;
   /* grid-template-rows: auto 1fr auto; */
-  grid-template-areas: "header header header" "nav section aside" "footer footer footer";
+  grid-template-areas: "header header header" "section nav aside" "footer footer footer";
 }
 
 header,
@@ -52,11 +52,11 @@ footer {
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 20% 1fr 10% 10%;
+    grid-template-rows: 10% 1fr 18% 1fr 10%;
     grid-template-areas:
       "header"
-      "nav"
       "section"
+      "nav"
       "aside"
       "footer";
   }
