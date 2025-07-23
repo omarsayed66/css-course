@@ -20,7 +20,7 @@ nav,
 section,
 aside,
 footer {
-  background-color: rgb(104, 98, 116);
+  background-color: rgb(82, 75, 20);
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
@@ -34,10 +34,11 @@ footer {
 
 header {
   grid-area: header;
+  grid-column-end: 3;
 }
 nav {
   grid-area: nav;
-  grid-row: span 2;
+  grid-area: 1/3/2/4;
 }
 section {
   grid-area: section;
@@ -45,8 +46,7 @@ section {
 }
 aside {
   grid-area: aside;
-  grid-area: 4/1/6/2;
-  grid-row: span 2;
+  grid-area: 2/1/6/2;
 }
 footer {
   grid-area: footer;
