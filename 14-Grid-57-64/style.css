@@ -89,23 +89,24 @@
 @media (max-width: 770px) {
   .grid {
     grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(9, 10%); */
     grid-template-rows: auto auto 10% 10% 10% 10%;
   }
 
   .grid div {
-    grid-area: unset !important;
-    grid-column: auto !important;
-    grid-row: auto !important;
+    grid-area: unset;
+    grid-column: auto;
+    grid-row: auto;
   }
 
-  /* .one {
-    grid-column: 1/ 5;
-    grid-row: 1/4;
+  .one {
+    grid-row: span 5 !important;
   }
 
   .two {
-    grid-column: 1/ 5;
+    grid-row: span 7 !important;
   }
+  /*
   .three {
     grid-column: 1/ 5;
   }
