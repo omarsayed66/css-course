@@ -7,19 +7,19 @@
 .grid {
   height: 60vh;
   display: grid;
-  gap: 10px;
+  gap: 2px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
 
   margin: auto;
   justify-items: stretch;
   align-items: stretch;
-  padding: 10px;
+  padding: 5px;
 }
 
 .grid img {
   max-width: 100%;
-  height: 186px;
+  height: 195px;
 }
 
 .grid img:nth-child(2) {
