@@ -18,12 +18,12 @@
 
 .grid img {
   width: 100%;
+  height: 300px;
 }
 
-/* .grid img,
-.text {
-  height: 100px;
-} */
+.grid article:nth-child(1) {
+  grid-row: span 2;
+}
 
 .text {
   padding: 20px;
@@ -41,7 +41,15 @@
   border: 0;
   color: white;
   padding: 10px;
-  width: 100%;
+  max-width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 940px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
