@@ -18,10 +18,11 @@
 
 .grid img {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .grid article:nth-child(1) {
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -46,6 +47,9 @@
 @media (max-width: 940px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  #none {
+    display: none;
   }
 }
 @media (max-width: 480px) {
