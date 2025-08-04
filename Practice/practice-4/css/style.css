@@ -1,0 +1,55 @@
+/* For Reset Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  --primary: #fea116;
+  --light: #f1f8ff;
+  --dark: #0f172b;
+  --rgb: #ffffffb3;
+}
+
+/*For Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font Family For All */
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+/* Styles For h1 To h6 Only */
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(15, 23, 43);
+}
+
+/* For All P */
+p {
+  color: rgb(0 0 0 / 70%);
+}
+
+/* For All a */
+a {
+  text-decoration: none;
+}
