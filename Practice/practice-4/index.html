@@ -14,9 +14,29 @@
     <meta name="keywords" content="practice-4 Grid Hotel" />
 
     <!-- CSS File -->
+    <!-- General Style File -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Header Files -->
     <link rel="stylesheet" href="css/style-header.css" />
     <link rel="stylesheet" href="css/media/media-header.css" />
+    <!-- Slider Files -->
+    <link rel="stylesheet" href="css/style-slide.css" />
+    <link rel="stylesheet" href="css/media/media-slide.css" />
+    <!-- Booking Files -->
+    <link rel="stylesheet" href="css/style-booking.css" />
+    <link rel="stylesheet" href="css/media/media-booking.css" />
+    <!-- About Files -->
+    <link rel="stylesheet" href="css/style-about.css" />
+    <link rel="stylesheet" href="css/media/media-about.css" />
+    <!-- Room Files -->
+    <link rel="stylesheet" href="css/style-room.css" />
+    <link rel="stylesheet" href="css/media/media-room.css" />
+    <!-- Video Files -->
+    <link rel="stylesheet" href="css/style-video.css" />
+    <link rel="stylesheet" href="css/media/media-video.css" />
+    <!-- All Animation In One File -->
+    <link rel="stylesheet" href="animation/animation.css" />
+    <!-- Fontawsome Files -->
     <link rel="stylesheet" href="webfonts-css/all.css" />
     <link rel="stylesheet" href="webfonts-css/all.min.css" />
 
@@ -39,84 +59,395 @@
     />
   </head>
   <body>
-    <!--.......................................Header.................................................... -->
-    <header>
-      <!-- Logo  -->
-      <div class="h1-box">
-        <a href=""><h1>hotelier</h1></a>
-      </div>
-
-      <!-- Menu Button Before 990px For Responsive -->
-      <button id="menu-toggle-id">
-        <div class="bara1"></div>
-        <div class="bara2"></div>
-        <div class="bara3"></div>
-      </button>
-
-      <!-- Navigation -->
-      <div class="right">
-        <!-- Email , Mobile , Icons -->
-        <div class="up">
-          <!-- Email And Mobile  -->
-          <div class="left">
-            <!-- Email -->
-            <div class="lef">
-              <i class="fa-solid fa-envelope"></i>
-              <p>info@example.com</p>
-            </div>
-            <!-- Mobile -->
-            <div class="righ">
-              <i class="fa-solid fa-phone-flip fa-rotate-90"></i>
-              <p>+012 345 6789</p>
-            </div>
+    <div class="site">
+      <div class="cont-of-site">
+        <!--............................................Header.................................................... -->
+        <header>
+          <!-- Logo  -->
+          <div class="h1-box">
+            <a href=""><h1>hotelier</h1></a>
           </div>
-          <!-- Icons -->
+
+          <!-- Menu Button Before 990px For Responsive -->
+          <button id="menu-toggle-id">
+            <div class="bara1"></div>
+            <div class="bara2"></div>
+            <div class="bara3"></div>
+          </button>
+
+          <!-- Navigation -->
           <div class="right">
-            <div class="icons">
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navbar And Prenium version -->
-        <div class="down">
-          <!-- Navbar -->
-          <nav id="nav">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Rooms</a>
-
-            <!-- Container For "Pages" Button-->
-            <div class="nav-item">
-              <a href="#" id="page">Pages </a>
-              <!-- Arrow -->
-              <a href="#" class="arr" id="arrow"></a>
-              <!-- Drop Down Menu -->
-              <div class="dropdown-menu" id="menu">
-                <a href="booking.html" class="dropdown-item">Booking</a>
-                <a href="team.html" class="dropdown-item">Our Team</a>
-                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+            <!-- Email , Mobile , Icons -->
+            <div class="up">
+              <!-- Email And Mobile  -->
+              <div class="left">
+                <!-- Email -->
+                <div class="lef">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@example.com</p>
+                </div>
+                <!-- Mobile -->
+                <div class="righ">
+                  <i class="fa-solid fa-phone-flip fa-rotate-90"></i>
+                  <p>+012 345 6789</p>
+                </div>
+              </div>
+              <!-- Icons -->
+              <div class="right">
+                <div class="icons">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
               </div>
             </div>
-            <a href="">Contact</a>
-          </nav>
-          <!-- Prenium version -->
-          <div class="link">
-            <a href="https://htmlcodex.com/hotel-html-template-pro"
-              >Premium Version
-            </a>
-            <i class="fa fa-arrow-right ms-3"></i>
+
+            <!-- Navbar And Prenium version -->
+            <div class="down">
+              <!-- Navbar -->
+              <nav id="nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Rooms</a>
+
+                <!-- Container For "Pages" Button-->
+                <div class="nav-item">
+                  <a href="#" id="page">Pages </a>
+                  <!-- Arrow -->
+                  <a href="#" class="arr" id="arrow"></a>
+                  <!-- Drop Down Menu -->
+                  <div class="dropdown-menu" id="menu">
+                    <a href="booking.html" class="dropdown-item">Booking</a>
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="testimonial.html" class="dropdown-item"
+                      >Testimonial</a
+                    >
+                  </div>
+                </div>
+                <a href="">Contact</a>
+              </nav>
+              <!-- Prenium version -->
+              <div class="link">
+                <a href="https://htmlcodex.com/hotel-html-template-pro"
+                  >Premium Version
+                </a>
+                <i class="fa fa-arrow-right ms-3"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!--...........................................End Header................................................. -->
+        <!--..........................................Start Slider................................................ -->
+        <section class="slide">
+          <div class="slides slide-1" id="slide-1">
+            <img src="img/carousel-1.jpg" alt="" />
+            <div class="overlay">
+              <div class="content">
+                <h6>luxury living</h6>
+                <h1 id="h-1">discover a brand luxurious hotel</h1>
+                <a id="link-1" href="">Our Rooms</a>
+                <a id="link-2" href="">book a room</a>
+              </div>
+            </div>
+          </div>
+          <div class="slides slide-2" id="slide-2">
+            <img src="img/carousel-2.jpg" alt="" />
+            <div class="overlay">
+              <div class="content">
+                <h6>luxury living</h6>
+                <h1 id="h-2">discover a brand luxurious hotel</h1>
+                <a id="link-1-2" href="">Our Rooms</a>
+                <a id="link-2-2" href="">book a room</a>
+              </div>
+            </div>
+          </div>
+          <button id="btn-1">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button id="btn-2">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </section>
+        <!--..........................................End Slider............................................... -->
+        <!--.........................................Start Booking............................................. -->
+        <div class="box-input">
+          <div class="inside-box-input">
+            <div class="container">
+              <div class="inputs">
+                <div class="one">
+                  <input
+                    type="text"
+                    placeholder="Check In"
+                    onfocus="this.type='datetime-local'"
+                  />
+                </div>
+                <div class="two">
+                  <input
+                    type="text"
+                    placeholder="Check Out"
+                    onfocus="this.type='datetime-local'"
+                  />
+                </div>
+                <div class="three">
+                  <select class="form-select">
+                    <option selected="">Adult</option>
+                    <option value="1">Adult 1</option>
+                    <option value="2">Adult 2</option>
+                    <option value="3">Adult 3</option>
+                  </select>
+                </div>
+                <div class="four">
+                  <select class="form-select">
+                    <option selected="">Child</option>
+                    <option value="1">Child 1</option>
+                    <option value="2">Child 2</option>
+                    <option value="3">Child 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="submit">
+                <div class="button">Submit</div>
+              </div>
+            </div>
           </div>
         </div>
+        <!--.........................................End Booking............................................... -->
+        <!--.........................................Start About............................................... -->
+        <section class="about">
+          <div class="inside-about">
+            <div class="container">
+              <div class="left">
+                <h6>about us</h6>
+                <h1>Welcome to <span>Hotelier</span></h1>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                  sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+                <div class="box">
+                  <div class="box-1 boxses">
+                    <div class="mini-box">
+                      <div class="content">
+                        <i class="fa-solid fa-hotel"></i>
+                        <h2 data-toggle="counter-up" data-target="1234">0</h2>
+                        <p id="p">rooms</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-2 boxses">
+                    <div class="mini-box">
+                      <div class="content">
+                        <i class="fa fa-users-cog fa-2x"></i>
+                        <h2 data-toggle="counter-up" data-target="1234">0</h2>
+                        <p id="p">rooms</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-3 boxses">
+                    <div class="mini-box">
+                      <div class="content">
+                        <i class="fa fa-users fa-2x"></i>
+                        <h2 data-toggle="counter-up" data-target="1234">0</h2>
+                        <p id="p">rooms</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="">Explore More</a>
+              </div>
+              <div class="right">
+                <div class="cont">
+                  <div class="img-1 img">
+                    <img src="img/about-1.jpg" alt="" />
+                  </div>
+                  <div class="img-2 img">
+                    <img src="img/about-2.jpg" alt="" />
+                  </div>
+                  <div class="img-3 img">
+                    <img src="img/about-3.jpg" alt="" />
+                  </div>
+                  <div class="img-4 img">
+                    <img src="img/about-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--..........................................End About................................................ -->
+        <!--.........................................Start Room................................................ -->
+        <section class="room">
+          <div class="container">
+            <div class="header head-room">
+              <h6>Our rooms</h6>
+              <h1>Explore Our <span>Rooms</span></h1>
+            </div>
+            <div class="box">
+              <div class="box-1 boxses">
+                <div class="mini-box">
+                  <div class="img">
+                    <img src="img/room-1.jpg" alt="" />
+                    <small>$100/Night</small>
+                  </div>
+                  <div class="content">
+                    <div class="top">
+                      <h5>Junior Suite</h5>
+                      <div class="stars">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bed text-primary me-2"></i>3 Bed</small
+                      >
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bath text-primary me-2"></i>2
+                        Bath</small
+                      >
+                      <small
+                        ><i class="fa fa-wifi text-primary me-2"></i>Wifi</small
+                      >
+                    </div>
+                    <p>
+                      Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                      lorem sed diam stet diam sed stet lorem.
+                    </p>
+                    <div class="footer">
+                      <a href="">View Detail</a>
+                      <a href="">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-2 boxses">
+                <div class="mini-box">
+                  <div class="img">
+                    <img src="img/room-2.jpg" alt="" />
+                    <small>$100/Night</small>
+                  </div>
+                  <div class="content">
+                    <div class="top">
+                      <h5>Executive Suite</h5>
+                      <div class="stars">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bed text-primary me-2"></i>3 Bed</small
+                      >
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bath text-primary me-2"></i>2
+                        Bath</small
+                      >
+                      <small
+                        ><i class="fa fa-wifi text-primary me-2"></i>Wifi</small
+                      >
+                    </div>
+                    <p>
+                      Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                      lorem sed diam stet diam sed stet lorem.
+                    </p>
+                    <div class="footer">
+                      <a href="">View Detail</a>
+                      <a href="">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-3 boxses">
+                <div class="mini-box">
+                  <div class="img">
+                    <img src="img/room-3.jpg" alt="" />
+                    <small>$100/Night</small>
+                  </div>
+                  <div class="content">
+                    <div class="top">
+                      <h5>Super Deluxe</h5>
+                      <div class="stars">
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                        <small class="fa fa-star text-primary"></small>
+                      </div>
+                    </div>
+                    <div class="center">
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bed text-primary me-2"></i>3 Bed</small
+                      >
+                      <small class="border-end me-3 pe-3"
+                        ><i class="fa fa-bath text-primary me-2"></i>2
+                        Bath</small
+                      >
+                      <small
+                        ><i class="fa fa-wifi text-primary me-2"></i>Wifi</small
+                      >
+                    </div>
+                    <p>
+                      Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                      lorem sed diam stet diam sed stet lorem.
+                    </p>
+                    <div class="footer">
+                      <a href="">View Detail</a>
+                      <a href="">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--..........................................End Room................................................. -->
+        <!--.........................................Start Video............................................... -->
+        <section class="video">
+          <div class="boxo">
+            <div class="lefto boxseso">
+              <div class="min-left">
+                <h6>luxury living</h6>
+                <h1>Discover A Brand Luxurious Hotel</h1>
+                <p>
+                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                  Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                  sed stet lorem sit clita duo justo magna dolore erat amet
+                </p>
+                <div class="link">
+                  <a class="a-1">Our Rooms</a>
+                  <a class="a-2" href="">book a room</a>
+                </div>
+              </div>
+            </div>
+            <div class="righto boxseso">
+              <div class="img">
+                <button
+                  type="button"
+                  class="btn-play"
+                  data-bs-toggle="modal"
+                  data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                  data-bs-target="#videoModal"
+                >
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--..........................................End Video................................................ -->
       </div>
-    </header>
-    <!-- ......................................End Header................................................ -->
-    <!-- Script -->
+    </div>
+
+    <!--Script -->
     <script src="js/main.js"></script>
   </body>
 </html>

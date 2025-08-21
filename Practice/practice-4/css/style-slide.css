@@ -1,0 +1,155 @@
+/* ..........................................Start Slide.................................................. */
+section.slide {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.slide .slides {
+  position: relative;
+}
+
+.slide .slides .overlay {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 43, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide .slides img {
+  width: 100%;
+}
+
+/* Start Content */
+
+.slide .slides .content {
+  max-width: 700px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.slide .slides .content h6 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+.slide .slides .content h6::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -50%;
+  margin-top: -1px;
+  background: var(--primary);
+  display: inline-block;
+}
+.slide .slides .content h6::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -50%;
+  margin-top: -1px;
+  background: var(--primary);
+  display: inline-block;
+}
+
+.slide .slides .content h1 {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.slide .slides .content a:nth-child(3) {
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  background-color: #fea116;
+  border-color: #fea116;
+  font-weight: 600;
+}
+.slide .slides .content a:nth-child(3):hover {
+  background-color: #f7b450;
+}
+
+.slide .slides .content a:nth-child(4) {
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding: 1rem 3rem;
+  color: #000;
+  background-color: #f1f8ff;
+  border-color: #f1f8ff;
+  font-weight: 600;
+}
+/* End Content */
+
+/* Slide Two Hidden Now */
+.slide .slide-2 {
+  display: none;
+}
+/* Display None */
+
+/* Two Buttons For Slide */
+.slide button {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.slide button:hover {
+  opacity: 1;
+}
+
+.slide button i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.slide button:nth-child(3) {
+  right: 0;
+}
+
+.slide button i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+/* End Button */
+
+/* For Slider */
+.slide .slide-1.active {
+  display: block !important;
+}
+.slide .slide-1.non-active {
+  display: none !important;
+}
+.slide .slide-2.active {
+  display: block !important;
+}
+.slide .slide-2.non-active {
+  display: none !important;
+}
+/* ............................................End Slide.................................................... */

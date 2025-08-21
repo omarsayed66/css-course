@@ -11,6 +11,7 @@
   --light: #f1f8ff;
   --dark: #0f172b;
   --rgb: #ffffffb3;
+  --bs-gutter-y: 3rem;
 }
 
 /*For Smooth Scroll */
@@ -44,6 +45,11 @@ h6,
   color: rgb(15, 23, 43);
 }
 
+h5,
+h6 {
+  font-size: 1rem;
+}
+
 /* For All P */
 p {
   color: rgb(0 0 0 / 70%);
@@ -53,3 +59,22 @@ p {
 a {
   text-decoration: none;
 }
+/* 
+header,
+.box-input,
+.about,
+.room {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.cont-of-site {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100vh !important;
+} */
