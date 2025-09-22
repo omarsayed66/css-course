@@ -1,38 +1,139 @@
-div {
-  background-color: #eee;
-
-  width: 200px;
-  height: 200px;
-  margin: 100px auto;
+.parent {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  font-weight: bold;
   position: relative;
-  border-radius: 50%;
+  margin: auto;
+  height: 95vh;
+}
+.parent div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
 }
 
-div::before {
-  background-color: #e91e63;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 50%;
-  border: 10px solid;
-  border-color: #e91e63 #e91e63 #e91e63 white;
+.main {
+  background-color: rgb(92, 92, 236);
+  z-index: 100;
+  transition: all 0.5s 0.7s;
 }
 
-div::after {
-  background-color: #03a9f4;
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  z-index: -2;
-  border-radius: 50%;
-  border: 10px solid;
-  border-color: #03a9f4 white #03a9f4 #03a9f4;
+.top {
+  background-color: rgb(52, 218, 168);
+  transition: all 1s 0.5s;
 }
+.top-left {
+  background-color: rgb(218, 132, 52);
+  transition: all 1s 0.5s;
+}
+.top-right {
+  background-color: rgb(174, 218, 52);
+  transition: all 1s 0.5s;
+}
+
+.bottom {
+  background-color: rgb(159, 35, 184);
+  transition: all 1s 0.5s;
+}
+.bottom-left {
+  background-color: rgb(255, 2, 242);
+  transition: all 1s 0.5s;
+}
+.bottom-right {
+  background-color: rgb(184, 35, 72);
+  transition: all 1s 0.5s;
+}
+.left {
+  background-color: rgb(218, 52, 52);
+  transition: all 1s 0.5s;
+}
+
+.right {
+  background-color: rgb(35, 184, 35);
+  transition: all 1s 0.5s;
+}
+
+.parent:hover .main {
+  transform: scale(1.2) rotate(45deg);
+}
+
+.parent:hover .top-left {
+  transform: scale(1.2) translate(-160px, -160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .top-right {
+  transform: scale(1.2) translate(160px, -160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .top {
+  transform: scale(1.2) translateY(-160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom {
+  transform: scale(1.2) translateY(160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom-left {
+  transform: scale(1.2) translate(-160px, 160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom-right {
+  transform: scale(1.2) translate(160px, 160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .left {
+  transform: scale(1.2) translateX(-160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+.parent:hover .right {
+  transform: scale(1.2) translateX(160px) rotate(45deg);
+  border-radius: 4px;
+}
+
+/* .parent:hover .main {
+  transform: scale(1.2);
+}
+
+.parent:hover .top-left {
+  transform: scale(1.2) translate(-160px, -160px);
+  border-radius: 4px;
+}
+.parent:hover .top-right {
+  transform: scale(1.2) translate(160px, -160px);
+  border-radius: 4px;
+}
+.parent:hover .top {
+  transform: scale(1.2) translateY(-160px);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom {
+  transform: scale(1.2) translateY(160px);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom-left {
+  transform: scale(1.2) translate(-160px, 160px);
+  border-radius: 4px;
+}
+
+.parent:hover .bottom-right {
+  transform: scale(1.2) translate(160px, 160px);
+  border-radius: 4px;
+}
+
+.parent:hover .left {
+  transform: scale(1.2) translateX(-160px);
+  border-radius: 4px;
+}
+.parent:hover .right {
+  transform: scale(1.2) translateX(160px);
+  border-radius: 4px;
+} */
