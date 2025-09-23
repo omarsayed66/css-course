@@ -1,125 +1,67 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
+  background: #0f1724;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #000;
-  transition: all 0.5s ease;
 }
+
+/* Parent container */
 .parent {
-  display: grid;
-  grid-template-columns: repeat(8, 70px);
-  grid-template-rows: repeat(4, 70px);
-  grid-gap: 15px;
-}
-.light {
-  border-radius: 50%;
-  background: #222;
-  box-shadow: 0 0 15px #000 inset;
-  transition: all 0.5s ease;
-}
-.light:hover {
-  background: var(--color);
-  box-shadow: 0 0 25px var(--color), 0 0 50px var(--color);
-  transform: scale(1.2) rotate(10deg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
 }
 
-body:has(.light:nth-child(1):hover) {
-  background: hsl(0, 100%, 50%);
-}
-body:has(.light:nth-child(2):hover) {
-  background: hsl(11, 100%, 50%);
-}
-body:has(.light:nth-child(3):hover) {
-  background: hsl(22, 100%, 50%);
-}
-body:has(.light:nth-child(4):hover) {
-  background: hsl(34, 100%, 50%);
-}
-body:has(.light:nth-child(5):hover) {
-  background: hsl(45, 100%, 50%);
-}
-body:has(.light:nth-child(6):hover) {
-  background: hsl(56, 100%, 50%);
-}
-body:has(.light:nth-child(7):hover) {
-  background: hsl(67, 100%, 50%);
-}
-body:has(.light:nth-child(8):hover) {
-  background: hsl(79, 100%, 50%);
+/* Lines */
+.line {
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  transition: all 0.8s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-body:has(.light:nth-child(9):hover) {
-  background: hsl(90, 100%, 50%);
+/* ألوان طبيعية */
+.line.one {
+  background: #2e8b57;
+  transform: translateX(150%);
 }
-body:has(.light:nth-child(10):hover) {
-  background: hsl(101, 100%, 50%);
+.line.two {
+  background: #87ceeb;
+  transform: translateX(-150%);
 }
-body:has(.light:nth-child(11):hover) {
-  background: hsl(112, 100%, 50%);
+.line.three {
+  background: #ffdf5d;
+  transform: translateX(150%);
 }
-body:has(.light:nth-child(12):hover) {
-  background: hsl(124, 100%, 50%);
+.line.four {
+  background: #a0522d;
+  transform: translateX(-150%);
 }
-body:has(.light:nth-child(13):hover) {
-  background: hsl(135, 100%, 50%);
+.line.five {
+  background: #ff7f50;
+  transform: translateX(150%);
 }
-body:has(.light:nth-child(14):hover) {
-  background: hsl(146, 100%, 50%);
+.line.six {
+  background: #4682b4;
+  transform: translateX(-150%);
 }
-body:has(.light:nth-child(15):hover) {
-  background: hsl(157, 100%, 50%);
+.line.seven {
+  background: #deb887;
+  transform: translateX(150%);
 }
-body:has(.light:nth-child(16):hover) {
-  background: hsl(169, 100%, 50%);
-}
-
-body:has(.light:nth-child(17):hover) {
-  background: hsl(180, 100%, 50%);
-}
-body:has(.light:nth-child(18):hover) {
-  background: hsl(191, 100%, 50%);
-}
-body:has(.light:nth-child(19):hover) {
-  background: hsl(202, 100%, 50%);
-}
-body:has(.light:nth-child(20):hover) {
-  background: hsl(214, 100%, 50%);
-}
-body:has(.light:nth-child(21):hover) {
-  background: hsl(225, 100%, 50%);
-}
-body:has(.light:nth-child(22):hover) {
-  background: hsl(236, 100%, 50%);
-}
-body:has(.light:nth-child(23):hover) {
-  background: hsl(247, 100%, 50%);
-}
-body:has(.light:nth-child(24):hover) {
-  background: hsl(259, 100%, 50%);
+.line.eight {
+  background: #708090;
+  transform: translateX(-150%);
 }
 
-body:has(.light:nth-child(25):hover) {
-  background: hsl(270, 100%, 50%);
-}
-body:has(.light:nth-child(26):hover) {
-  background: hsl(281, 100%, 50%);
-}
-body:has(.light:nth-child(27):hover) {
-  background: hsl(292, 100%, 50%);
-}
-body:has(.light:nth-child(28):hover) {
-  background: hsl(304, 100%, 50%);
-}
-body:has(.light:nth-child(29):hover) {
-  background: hsl(315, 100%, 50%);
-}
-body:has(.light:nth-child(30):hover) {
-  background: hsl(326, 100%, 50%);
-}
-body:has(.light:nth-child(31):hover) {
-  background: hsl(337, 100%, 50%);
-}
-body:has(.light:nth-child(32):hover) {
-  background: hsl(349, 100%, 50%);
+.parent:hover .line {
+  transform: translateX(0);
 }
