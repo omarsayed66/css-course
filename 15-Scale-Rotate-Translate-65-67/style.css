@@ -1,6 +1,6 @@
 .parent {
   position: relative;
-  margin: 100px auto;
+  margin: 250px auto;
   width: 150px;
   height: 95vh;
 }
@@ -9,6 +9,11 @@
   height: 100px;
   position: absolute;
   transition: all 0.8s ease;
+  border-radius: 4px;
+}
+
+.main {
+  background-color: cadetblue;
 }
 
 .top {
@@ -25,14 +30,14 @@
 }
 
 .parent:hover .top {
-  transform: scale(1.2) translateY(30px) rotate(45deg);
+  transform: translate(0px, -150px) rotate(45deg);
 }
 .parent:hover .bottom-left {
-  transform: scale(1.2) translate(-71px, 100px) rotate(45deg);
+  transform: translate(-180px, 0px) rotate(45deg);
 }
 .parent:hover .bottom-center {
-  transform: scale(1.2) translate(0px, 170px) rotate(45deg);
+  transform: translate(0px, 150px) rotate(45deg);
 }
 .parent:hover .bottom-right {
-  transform: scale(1.2) translate(71px, 100px) rotate(45deg);
+  transform: translate(180px, 0px) rotate(45deg);
 }
