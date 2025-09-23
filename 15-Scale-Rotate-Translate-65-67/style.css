@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   background: #000;
+  transition: all 0.5s ease;
 }
 .parent {
   display: grid;
@@ -23,7 +24,6 @@ body {
   transform: scale(1.2) rotate(10deg);
 }
 
-/* 1 → 32 */
 body:has(.light:nth-child(1):hover) {
   background: hsl(0, 100%, 50%);
 }
