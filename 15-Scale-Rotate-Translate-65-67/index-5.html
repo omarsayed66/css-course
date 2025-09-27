@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Merge Rows</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0f1724;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 600px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .left,
+      .right {
+        display: flex;
+        gap: 10px;
+        width: 48%;
+      }
+
+      .line {
+        flex: 1;
+        height: 25px;
+        border-radius: 6px;
+        transition: all 0.8s ease;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+      }
+
+      /* ألوان مختلفة */
+      .one {
+        background: #ff6b6b;
+      }
+      .two {
+        background: #4ecdc4;
+      }
+      .three {
+        background: #ffe66d;
+      }
+      .four {
+        background: #1a535c;
+      }
+      .five {
+        background: #ff9f1c;
+      }
+      .six {
+        background: #2ec4b6;
+      }
+      .seven {
+        background: #a29bfe;
+      }
+      .eight {
+        background: #e17055;
+      }
+
+      /* قبل الهوفر */
+      .left .line {
+        transform: translateX(-150%);
+      }
+      .right .line {
+        transform: translateX(150%);
+      }
+
+      /* بعد الهوفر */
+      .parent:hover .line {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="row">
+        <div class="left">
+          <div class="line one"></div>
+          <div class="line two"></div>
+        </div>
+        <div class="right">
+          <div class="line one"></div>
+          <div class="line two"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line three"></div>
+          <div class="line four"></div>
+        </div>
+        <div class="right">
+          <div class="line three"></div>
+          <div class="line four"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line five"></div>
+          <div class="line six"></div>
+        </div>
+        <div class="right">
+          <div class="line five"></div>
+          <div class="line six"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line seven"></div>
+          <div class="line eight"></div>
+        </div>
+        <div class="right">
+          <div class="line seven"></div>
+          <div class="line eight"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line one"></div>
+          <div class="line two"></div>
+        </div>
+        <div class="right">
+          <div class="line one"></div>
+          <div class="line two"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line three"></div>
+          <div class="line four"></div>
+        </div>
+        <div class="right">
+          <div class="line three"></div>
+          <div class="line four"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line five"></div>
+          <div class="line six"></div>
+        </div>
+        <div class="right">
+          <div class="line five"></div>
+          <div class="line six"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left">
+          <div class="line seven"></div>
+          <div class="line eight"></div>
+        </div>
+        <div class="right">
+          <div class="line seven"></div>
+          <div class="line eight"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

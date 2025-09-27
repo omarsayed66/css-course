@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Step 1</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0f1724;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 320px;
+      }
+
+      .line {
+        height: 40px;
+        width: 50%;
+        border-radius: 6px;
+        transition: all 0.8s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      /* العناصر القديمة */
+      .one {
+        background: #2e8b57;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .two {
+        background: #87ceeb;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .three {
+        background: #ffdf5d;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .four {
+        background: #a0522d;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .five {
+        background: #ff7f50;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .six {
+        background: #4682b4;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .seven {
+        background: #deb887;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .eight {
+        background: #708090;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+
+      /* العناصر الجديدة */
+      .nine {
+        background: #8b0000;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .ten {
+        background: #556b2f;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .eleven {
+        background: #ff1493;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .twelve {
+        background: #00ced1;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .thirteen {
+        background: #ffd700;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .fourteen {
+        background: #9400d3;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+      .fifteen {
+        background: #ff8c00;
+        align-self: flex-end;
+        transform: translateX(150%);
+      }
+      .sixteen {
+        background: #20b2aa;
+        align-self: flex-start;
+        transform: translateX(-150%);
+      }
+
+      /* حركة */
+      .parent:hover .line {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!-- العناصر القديمة -->
+      <div class="line one"></div>
+      <div class="line two"></div>
+      <div class="line three"></div>
+      <div class="line four"></div>
+      <div class="line five"></div>
+      <div class="line six"></div>
+      <div class="line seven"></div>
+      <div class="line eight"></div>
+
+      <!-- العناصر الجديدة -->
+      <div class="line nine"></div>
+      <div class="line ten"></div>
+      <div class="line eleven"></div>
+      <div class="line twelve"></div>
+      <div class="line thirteen"></div>
+      <div class="line fourteen"></div>
+      <div class="line fifteen"></div>
+      <div class="line sixteen"></div>
+    </div>
+  </body>
+</html>
