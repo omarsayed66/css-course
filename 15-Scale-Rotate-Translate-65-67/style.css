@@ -94,8 +94,8 @@ body {
 }
 
 .main-2:hover ~ .div-4 {
-  left: 410px;
-  bottom: 200px;
+  left: 412px;
+  bottom: 198px;
   border-radius: 6px;
   background-color: rgb(252, 252, 252);
 }
