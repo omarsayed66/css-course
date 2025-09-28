@@ -1,41 +1,40 @@
 body {
   background-color: rgb(7, 4, 14);
   margin: 0;
-  height: 100vh;
 }
 
 .main {
-  width: 100%;
-  height: 10%;
-  background-color: rgb(6, 29, 36);
+  width: 10%;
+  height: 100%;
+  background-color: rgb(143, 58, 47);
+  transition: all 5s 3.2s ease;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left {
+  background: linear-gradient(180deg, #f093fb, #f5576c);
+  width: 0%;
+  height: 100vh;
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 1.5s 3s ease;
-}
-
-.top {
-  background-color: #ff9a8b; /* برتقالي وردي */
-  width: 100%;
-  height: 0;
   transition: all 5s ease;
 }
 
-.bottom {
-  background-color: #8ec5fc; /* أزرق سماوي */
-  width: 100%;
-  height: 0;
+.right {
+  background: linear-gradient(180deg, #43e97b, #38f9d7);
+  width: 0%;
+  height: 100vh;
   position: absolute;
-  bottom: 0;
+  right: 0;
   transition: all 5s ease;
 }
 
 .animate {
   opacity: 0;
-  height: 0;
+  width: 0;
 }
-.animate ~ .top,
-.animate ~ .bottom {
-  height: 50%;
+.animate ~ .left,
+.animate ~ .right {
+  width: 50%;
 }
