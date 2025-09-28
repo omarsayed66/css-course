@@ -1,101 +1,77 @@
 body {
-  background-color: rgb(15, 8, 26);
-}
-
-.parent {
-  margin: 200px auto;
-}
-
-.div-1 {
-  background-color: cadetblue;
-  width: 300px;
-  height: 300px;
-
-  clip-path: polygon(54% 0, 0% 100%, 0% 0);
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: all 3s ease;
-}
-.div-2 {
-  background-color: cadetblue;
-  width: 300px;
-  height: 300px;
-  /* clip-path: polygon(50% 0, 0 100%, 100% 100%); */
-  clip-path: polygon(54% 0, 0% 100%, 0% 0);
-  transform: rotate(180deg);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transition: all 3s ease;
-}
-.div-3 {
-  background-color: cadetblue;
-  width: 300px;
-  height: 300px;
-
-  clip-path: polygon(54% 0, 0% 100%, 0% 0);
-  transform: rotate(90deg);
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all 3s ease;
-}
-.div-4 {
-  background-color: cadetblue;
-  width: 300px;
-  height: 300px;
-  clip-path: polygon(54% 0, 0% 100%, 0% 0);
-  transform: rotate(-90deg);
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: all 3s ease;
+  background-color: rgb(7, 4, 14);
+  overflow: hidden;
 }
 
 .main {
+  background-color: red;
   width: 200px;
   height: 200px;
-  background-color: rgb(15, 8, 26);
-  margin: auto;
+  margin: 200px auto;
+  border-radius: 6px;
+  transition: all 2.5s 2.5s ease;
 }
 
-.main-2 {
-  width: 200px;
-  height: 200px;
-  background-color: rgb(15, 8, 26);
-  margin: auto;
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+  width: 0%;
+  height: 0%;
   position: absolute;
+  transition: all 5s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.top-left {
+  background-color: #ff6b6b;
+  left: 0;
+  top: 0;
+}
+
+.top-right {
+  background-color: #ffd93d;
+  right: 0;
+  top: 0;
+}
+
+.bottom-left {
+  background-color: #6bcb77;
+  left: 0;
   bottom: 0;
-  left: 40%;
 }
 
-.main:hover ~ .div-1 {
-  left: 48%;
-  top: 40%;
-  border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+.bottom-right {
+  background-color: #4d96ff;
+  right: 0;
+  bottom: 0;
 }
 
-.main:hover ~ .div-2 {
-  right: 410px;
-  bottom: 60px;
-  border-radius: 6px;
-  background-color: rgb(252, 252, 252);
+span {
+  opacity: 0;
+  transition: all 1s 4.8s ease;
 }
 
-.main-2:hover ~ .div-3 {
-  right: 389px;
-  top: 238px;
-  border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+/* الكلاس الجديد بدل :hover */
+.animate {
+  opacity: 0;
+  transform: scale(0.1);
 }
 
-.main-2:hover ~ .div-4 {
-  left: 412px;
-  bottom: 198px;
-  border-radius: 6px;
-  background-color: rgb(252, 252, 252);
+.animate ~ .top-left,
+.animate ~ .top-right,
+.animate ~ .bottom-left,
+.animate ~ .bottom-right {
+  width: 50%;
+  height: 50%;
+}
+
+.animate ~ div span {
+  opacity: 1;
 }
