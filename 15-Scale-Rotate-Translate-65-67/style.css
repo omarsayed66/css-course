@@ -3,38 +3,140 @@ body {
   margin: 0;
 }
 
-.main {
-  width: 10%;
-  height: 100%;
-  background-color: rgb(143, 58, 47);
-  transition: all 5s 3.2s ease;
+.top-left,
+.top-center,
+.top-right,
+.left-center,
+.center-center,
+.right-center,
+.bottom-left,
+.bottom-center,
+.bottom-right {
+  width: 100px;
+  height: 100px;
+  background-color: deeppink;
   position: absolute;
+  transition: all 2s ease;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.top-left {
+  top: 50px;
+  left: 50px;
+}
+
+.top-center {
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.left {
-  background: linear-gradient(180deg, #f093fb, #f5576c);
-  width: 0%;
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  transition: all 5s ease;
+
+.top-right {
+  top: 50px;
+  right: 50px;
 }
 
-.right {
-  background: linear-gradient(180deg, #43e97b, #38f9d7);
-  width: 0%;
-  height: 100vh;
-  position: absolute;
-  right: 0;
-  transition: all 5s ease;
+.left-center {
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.animate {
-  opacity: 0;
-  width: 0;
+.center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.animate ~ .left,
-.animate ~ .right {
-  width: 50%;
+.right-center {
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom-left {
+  bottom: 50px;
+  left: 50px;
+}
+
+.bottom-center {
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-right {
+  bottom: 50px;
+  right: 50px;
+}
+
+/* العناصر اللي في النص أفقيًا */
+.animate.top-center,
+.animate.bottom-center {
+  animation: spinX 2s linear infinite;
+}
+
+/* العناصر اللي في النص رأسيًا */
+.animate.left-center,
+.animate.right-center {
+  animation: spinY 2s linear infinite;
+}
+
+/* العنصر اللي في النص أفقي + رأسي */
+.animate.center-center {
+  animation: spinXY 2s linear infinite;
+}
+
+/* باقي العناصر (الأركان) مش محتاجين translate */
+.animate.top-left,
+.animate.top-right,
+.animate.bottom-left,
+.animate.bottom-right {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinX {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes spinY {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes spinXY {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
